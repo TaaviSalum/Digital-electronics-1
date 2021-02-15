@@ -15,3 +15,7 @@ c | b | a | f(c,b,a)
 1 | 0 | 1 | 
 1 | 1 | 0 | 
 1 | 1 | 1 | 
+
+
+![Test logo](/pictures/test.jpg)
+Format: ![Alt Text](url)
