@@ -1,5 +1,5 @@
 # Digital-electronics-1
-c | b | a | f(c,b,a)
+c | b
 ------------ | -------------
 Content from cell 1 | Content from cell 2
 Content in the first column | Content in the second column
