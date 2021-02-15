@@ -1,5 +1,11 @@
 # Digital-electronics-1
-c | b | a 
------------- | ------------- | -------------
-Content from cell 1 | Content from cell 2 | content?
-Content in the first column | Content in the second column | content?
+c | b | a | f(c,b,a)
+- | - | - | --------
+0 | 0 | 0 | --------
+0 | 0 | 1 | --------
+0 | 1 | 0 | --------
+0 | 1 | 0 | --------
+1 | 0 | 0 | --------
+1 | 0 | 1 | --------
+1 | 1 | 0 | --------
+1 | 1 | 1 | --------
