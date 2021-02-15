@@ -17,5 +17,5 @@ c | b | a | f(c,b,a)
 1 | 1 | 1 | 
 
 
-![Test logo](/pictures/Test.jpg)
-Format: ![Alt Text](url)
+![Test logo](https://github.com/TaaviSalum/Digital-electronics-1/blob/main/Labs/01-gates/pictures/Test.jpg)
+Format: ![Alt Text]
