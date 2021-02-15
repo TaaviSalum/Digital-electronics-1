@@ -1,7 +1,17 @@
-<<<<<<< HEAD
-# Digital-electronics-1
-Test
-=======
-# Digital-electronics-1
-Kappa123
->>>>>>> b441ccd7c04ddaf82dd151f50cd41a96585fe781
+### Digital-electronics-1
+
+# Verification of De Morgan's laws:
+
+# f(c,b,a) = ((not b) and a) or ((not c) and (not b))
+
+c | b | a | f(c,b,a) 
+--- | --- | --- | ---
+0 | 0 | 0 | 
+0 | 0 | 1 | 
+0 | 1 | 0 | 
+0 | 1 | 1 | 
+1 | 0 | 0 | 
+1 | 0 | 1 | 
+1 | 1 | 0 | 
+1 | 1 | 1 | 
+ 
