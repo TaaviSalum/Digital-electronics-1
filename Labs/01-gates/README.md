@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Digital-electronics-1
 
 
@@ -30,10 +29,8 @@ c | b | a | f(c,b,a)
 -- This work is licensed under the terms of the MIT license.
 --
 
-
 library ieee;               -- Standard library
 use ieee.std_logic_1164.all;-- Package for data types and logic operations
-
 
 -- Entity declaration for basic gates
 
