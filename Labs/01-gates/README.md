@@ -1,7 +1,9 @@
 <<<<<<< HEAD
 # Digital-electronics-1
 
-## Verification of De Morgan's laws:
+
+## Exercise 1: Verification of De Morgan's laws:
+
 
 ### f(c,b,a) = ((not b) and a) or ((not c) and (not b))
 
@@ -16,6 +18,7 @@ c | b | a | f(c,b,a)
 1 | 1 | 0 | 0
 1 | 1 | 1 | 0
 
+
 ### VHDL Code:
 ------------------------------------------------------------------------
 --
@@ -26,14 +29,14 @@ c | b | a | f(c,b,a)
 -- Dept. of Radio Electronics, Brno University of Technology, Czechia
 -- This work is licensed under the terms of the MIT license.
 --
-------------------------------------------------------------------------
+
 
 library ieee;               -- Standard library
 use ieee.std_logic_1164.all;-- Package for data types and logic operations
 
-------------------------------------------------------------------------
+
 -- Entity declaration for basic gates
-------------------------------------------------------------------------
+
 entity gates is
     port(
         a_i    : in  std_logic;         -- Data input
@@ -45,9 +48,9 @@ entity gates is
     );
 end entity gates;
 
-------------------------------------------------------------------------
+
 -- Architecture body for basic gates
-------------------------------------------------------------------------
+
 architecture dataflow of gates is
 begin
 --    for_o  <= a_i or b_i;
@@ -57,6 +60,7 @@ begin
 end architecture dataflow;
 
 ------------------------------------------------------------------------
+
 
 Waveform #1:
 ![Test logo](https://github.com/TaaviSalum/Digital-electronics-1/blob/main/Labs/01-gates/pictures/Ex1.1.jpg)
