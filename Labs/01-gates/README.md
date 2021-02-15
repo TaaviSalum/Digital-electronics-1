@@ -55,8 +55,8 @@ end architecture dataflow;
 
 ### **Waveform #1:**
 ![Test logo](https://github.com/TaaviSalum/Digital-electronics-1/blob/main/Labs/01-gates/pictures/Ex1.1.jpg)
-
 ### **[EDA Playground example](https://www.edaplayground.com/x/UGWZ)**
+
 
 
 
@@ -115,8 +115,8 @@ end architecture dataflow;
 
 ### **Waveform #1:**
 ![Test logo](https://github.com/TaaviSalum/Digital-electronics-1/blob/main/Labs/01-gates/pictures/Ex1.2.jpg)
-
 ### **[EDA Playground example](https://www.edaplayground.com/x/8PeD)**
+
 
 
 
@@ -175,8 +175,11 @@ end architecture dataflow;
 
 ### **Waveform #1:**
 ![Test logo](https://github.com/TaaviSalum/Digital-electronics-1/blob/main/Labs/01-gates/pictures/Ex1.3.jpg)
-
 ### **[EDA Playground example](https://www.edaplayground.com/x/AhuU)**
 
 
+
+
+
+## **Exercise 2.1: Verification of Distributive laws:**
 
