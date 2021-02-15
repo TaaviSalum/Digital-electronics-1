@@ -1,12 +1,12 @@
-# Digital-electronics-1
+# **Digital-electronics-1**
 
 
-## Exercise 1: Verification of De Morgan's laws:
+## **Exercise 1: Verification of De Morgan's laws:**
 
 
-### f(c,b,a) = ((not b) and a) or ((not c) and (not b))
+### **f(c,b,a) = ((not b) and a) or ((not c) and (not b))**
 
-c | b | a | f(c,b,a) 
+**c | b | a | f(c,b,a)** 
 --- | --- | --- | ---
 0 | 0 | 0 | 1
 0 | 0 | 1 | 1
@@ -18,7 +18,7 @@ c | b | a | f(c,b,a)
 1 | 1 | 1 | 0
 
 
-### VHDL Code:
+### **VHDL Code:**
 ------------------------------------------------------------------------
 --
 -- Example of basic OR, AND, XOR gates.
@@ -59,7 +59,7 @@ end architecture dataflow;
 ------------------------------------------------------------------------
 
 
-Waveform #1:
+### **Waveform #1:**
 ![Test logo](https://github.com/TaaviSalum/Digital-electronics-1/blob/main/Labs/01-gates/pictures/Ex1.1.jpg)
 
-[EDA Playground example](https://www.edaplayground.com/x/UGWZ)
+### **[EDA Playground example](https://www.edaplayground.com/x/UGWZ)**
