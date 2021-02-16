@@ -163,7 +163,7 @@ begin
     f_p <= a_i or (b_i and c_i);
 
 end architecture dataflow;
-
+```
 
 ### **Waveform #2:**
 ![Test logo](https://github.com/TaaviSalum/Digital-electronics-1/blob/main/Labs/01-gates/Pictures/Ex2.jpg)
