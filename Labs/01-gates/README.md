@@ -113,7 +113,7 @@ end architecture dataflow;
 ------------------------------------------------------------------------
 
 
-### **Waveform #1:**
+### **Waveform #2:**
 ![Test logo](https://github.com/TaaviSalum/Digital-electronics-1/blob/main/Labs/01-gates/pictures/Ex1.2.jpg)
 ### **[EDA Playground example](https://www.edaplayground.com/x/8PeD)**
 
@@ -173,7 +173,7 @@ end architecture dataflow;
 ------------------------------------------------------------------------
 
 
-### **Waveform #1:**
+### **Waveform #3:**
 ![Test logo](https://github.com/TaaviSalum/Digital-electronics-1/blob/main/Labs/01-gates/pictures/Ex1.3.jpg)
 ### **[EDA Playground example](https://www.edaplayground.com/x/AhuU)**
 
@@ -248,7 +248,7 @@ end architecture dataflow;
 ------------------------------------------------------------------------
 
 
-### **Waveform #1:**
+### **Waveform #4:**
 ![Test logo](https://github.com/TaaviSalum/Digital-electronics-1/blob/main/Labs/01-gates/pictures/Ex2.1.jpg)
 ### **[EDA Playground example](https://www.edaplayground.com/x/vvCM)**
 
@@ -323,6 +323,6 @@ end architecture dataflow;
 ------------------------------------------------------------------------
 
 
-### **Waveform #1:**
+### **Waveform #5:**
 ![Test logo](https://github.com/TaaviSalum/Digital-electronics-1/blob/main/Labs/01-gates/pictures/Ex2.2.jpg)
 ### **[EDA Playground example](https://www.edaplayground.com/x/eFcA)**
