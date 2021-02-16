@@ -1,2 +1,6 @@
 # Digital-electronics-1
-Test
+
+Hello!
+Welcome to Taavi Salum's Digital electronics repository.
+
+**To be updated**
