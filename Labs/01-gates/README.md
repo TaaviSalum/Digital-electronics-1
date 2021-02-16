@@ -37,7 +37,7 @@
 1 | 1 | 1 | 0
 
 
-### **f(c,b,a)NOR = ((not b) nor a) nor ((not c) nor (not b))**
+### **![Test logo](https://github.com/TaaviSalum/Digital-electronics-1/blob/main/Labs/01-gates/pictures/Formula5.gif)**
 
 **c** | **b** | **a** | **![Test logo](https://github.com/TaaviSalum/Digital-electronics-1/blob/main/Labs/01-gates/pictures/Formula6.gif)** 
 --- | --- | --- | ---
