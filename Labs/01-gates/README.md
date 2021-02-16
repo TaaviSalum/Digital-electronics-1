@@ -9,9 +9,9 @@
 ## **Exercise 1: Verification of De Morgan's laws:**
 
 
-### **![Test logo](https://github.com/TaaviSalum/Digital-electronics-1/blob/main/Labs/01-gates/pictures/Formula1.gif)**
+### **![Test logo](https://github.com/TaaviSalum/Digital-electronics-1/blob/main/Labs/01-gates/Pictures/Formula1.gif)**
 
-**c** | **b** | **a** | ![Test logo](https://github.com/TaaviSalum/Digital-electronics-1/blob/main/Labs/01-gates/pictures/Formula2.gif) 
+**c** | **b** | **a** | ![Test logo](https://github.com/TaaviSalum/Digital-electronics-1/blob/main/Labs/01-gates/Pictures/Formula2.gif) 
 --- | --- | --- | ---
 0 | 0 | 0 | 1
 0 | 0 | 1 | 1
@@ -23,9 +23,9 @@
 1 | 1 | 1 | 0
 
 
-### **![Test logo](https://github.com/TaaviSalum/Digital-electronics-1/blob/main/Labs/01-gates/pictures/Formula3.gif)**
+### **![Test logo](https://github.com/TaaviSalum/Digital-electronics-1/blob/main/Labs/01-gates/Pictures/Formula3.gif)**
 
-**c** | **b** | **a** | ![Test logo](https://github.com/TaaviSalum/Digital-electronics-1/blob/main/Labs/01-gates/pictures/Formula4.gif) 
+**c** | **b** | **a** | ![Test logo](https://github.com/TaaviSalum/Digital-electronics-1/blob/main/Labs/01-gates/Pictures/Formula4.gif) 
 --- | --- | --- | ---
 0 | 0 | 0 | 1
 0 | 0 | 1 | 1
@@ -37,9 +37,9 @@
 1 | 1 | 1 | 0
 
 
-### **![Test logo](https://github.com/TaaviSalum/Digital-electronics-1/blob/main/Labs/01-gates/pictures/Formula5.gif)**
+### **![Test logo](https://github.com/TaaviSalum/Digital-electronics-1/blob/main/Labs/01-gates/Pictures/Formula5.gif)**
 
-**c** | **b** | **a** | **![Test logo](https://github.com/TaaviSalum/Digital-electronics-1/blob/main/Labs/01-gates/pictures/Formula6.gif)** 
+**c** | **b** | **a** | **![Test logo](https://github.com/TaaviSalum/Digital-electronics-1/blob/main/Labs/01-gates/Pictures/Formula6.gif)** 
 --- | --- | --- | ---
 0 | 0 | 0 | 1
 0 | 0 | 1 | 1
@@ -88,7 +88,7 @@ end architecture dataflow;
 ```
 
 ### **Waveform #1:**
-![Test logo](https://github.com/TaaviSalum/Digital-electronics-1/blob/main/Labs/01-gates/pictures/Ex1.jpg)
+![Test logo](https://github.com/TaaviSalum/Digital-electronics-1/blob/main/Labs/01-gates/Pictures/Ex1.jpg)
 ### **[EDA Playground example](https://www.edaplayground.com/x/UGWZ)**
 
 
@@ -98,9 +98,9 @@ end architecture dataflow;
 ## **Exercise 2: Verification of Distributive laws:**
 
 
-### **![Test logo](https://github.com/TaaviSalum/Digital-electronics-1/blob/main/Labs/01-gates/pictures/Formula7.gif)**
+### **![Test logo](https://github.com/TaaviSalum/Digital-electronics-1/blob/main/Labs/01-gates/Pictures/Formula7.gif)**
 
-**c** | **b** | **a** | **![Test logo](https://github.com/TaaviSalum/Digital-electronics-1/blob/main/Labs/01-gates/pictures/Formula8.gif)** | **![Test logo](https://github.com/TaaviSalum/Digital-electronics-1/blob/main/Labs/01-gates/pictures/Formula9.gif)**
+**c** | **b** | **a** | **![Test logo](https://github.com/TaaviSalum/Digital-electronics-1/blob/main/Labs/01-gates/Pictures/Formula8.gif)** | **![Test logo](https://github.com/TaaviSalum/Digital-electronics-1/blob/main/Labs/01-gates/Pictures/Formula9.gif)**
 --- | --- | --- | --- | --- 
 0 | 0 | 0 | 0 | 0
 0 | 0 | 1 | 0 | 0
@@ -112,9 +112,9 @@ end architecture dataflow;
 1 | 1 | 1 | 1 | 1
 
 
-### **![Test logo](https://github.com/TaaviSalum/Digital-electronics-1/blob/main/Labs/01-gates/pictures/Formula10.gif)**
+### **![Test logo](https://github.com/TaaviSalum/Digital-electronics-1/blob/main/Labs/01-gates/Pictures/Formula10.gif)**
 
-**c** | **b** | **a** | **![Test logo](https://github.com/TaaviSalum/Digital-electronics-1/blob/main/Labs/01-gates/pictures/Formula11.gif)** | **![Test logo](https://github.com/TaaviSalum/Digital-electronics-1/blob/main/Labs/01-gates/pictures/Formula12.gif)** 
+**c** | **b** | **a** | **![Test logo](https://github.com/TaaviSalum/Digital-electronics-1/blob/main/Labs/01-gates/Pictures/Formula11.gif)** | **![Test logo](https://github.com/TaaviSalum/Digital-electronics-1/blob/main/Labs/01-gates/Pictures/Formula12.gif)** 
 --- | --- | --- | --- | ---
 0 | 0 | 0 | 0 | 0
 0 | 0 | 1 | 1 | 1
@@ -163,8 +163,8 @@ begin
     f_p <= a_i or (b_i and c_i);
 
 end architecture dataflow;
-```
+
 
 ### **Waveform #2:**
-![Test logo](https://github.com/TaaviSalum/Digital-electronics-1/blob/main/Labs/01-gates/pictures/Ex2.jpg)
+![Test logo](https://github.com/TaaviSalum/Digital-electronics-1/blob/main/Labs/01-gates/Pictures/Ex2.jpg)
 ### **[EDA Playground example](https://www.edaplayground.com/x/vvCM)**
