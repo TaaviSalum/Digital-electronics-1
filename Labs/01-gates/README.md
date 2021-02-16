@@ -2,7 +2,7 @@
 # **Laboratory #1**
 
 
-## **[Link to my Digital-electronics-1 repository](https://github.com/TaaviSalum/Digital-electronics-1)**
+## **https://github.com/TaaviSalum/Digital-electronics-1**
 
 
 ------------------------------------------------------------------------
