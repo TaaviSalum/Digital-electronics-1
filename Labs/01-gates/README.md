@@ -98,9 +98,9 @@ end architecture dataflow;
 ## **Exercise 2: Verification of Distributive laws:**
 
 
-### **(a and b) or (a and c) = a and (b or c)**
+### **![Test logo](https://github.com/TaaviSalum/Digital-electronics-1/blob/main/Labs/01-gates/pictures/Formula7.gif)**
 
-**c** | **b** | **a** | **(a and b) or (a and c)** | **a and (b or c)**
+**c** | **b** | **a** | **![Test logo](https://github.com/TaaviSalum/Digital-electronics-1/blob/main/Labs/01-gates/pictures/Formula8.gif)** | **![Test logo](https://github.com/TaaviSalum/Digital-electronics-1/blob/main/Labs/01-gates/pictures/Formula9.gif)**
 --- | --- | --- | --- | --- 
 0 | 0 | 0 | 0 | 0
 0 | 0 | 1 | 0 | 0
@@ -112,9 +112,9 @@ end architecture dataflow;
 1 | 1 | 1 | 1 | 1
 
 
-### **(a or b) and (a or c) = a or (b and c)**
+### **![Test logo](https://github.com/TaaviSalum/Digital-electronics-1/blob/main/Labs/01-gates/pictures/Formula10.gif)**
 
-**c** | **b** | **a** | **(a or b) and (a or c)** | **a or (b and c)** 
+**c** | **b** | **a** | **![Test logo](https://github.com/TaaviSalum/Digital-electronics-1/blob/main/Labs/01-gates/pictures/Formula11.gif)** | **![Test logo](https://github.com/TaaviSalum/Digital-electronics-1/blob/main/Labs/01-gates/pictures/Formula12.gif)** 
 --- | --- | --- | --- | ---
 0 | 0 | 0 | 0 | 0
 0 | 0 | 1 | 1 | 1
@@ -144,11 +144,11 @@ entity gates is
     port(
         a_i    : in  std_logic;         -- Data input
         b_i    : in  std_logic;         -- Data input
-        c_i    : in  std_logic;			-- Data input
-        f_m    : out std_logic;        	-- Output function
-        f_n    : out std_logic;			-- Output function
-        f_o    : out std_logic;        	-- Output function
-        f_p    : out std_logic			-- Output function
+        c_i    : in  std_logic;         -- Data input
+        f_m    : out std_logic;         -- Output function
+        f_n    : out std_logic;         -- Output function
+        f_o    : out std_logic;         -- Output function
+        f_p    : out std_logic          -- Output function
     );
 end entity gates;
 
