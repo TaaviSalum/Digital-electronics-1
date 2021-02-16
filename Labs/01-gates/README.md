@@ -9,7 +9,7 @@
 ## **Exercise 1: Verification of De Morgan's laws:**
 
 
-![Test logo](https://github.com/TaaviSalum/Digital-electronics-1/blob/main/Labs/01-gates/pictures/Formula1.gif)
+### **![Test logo](https://github.com/TaaviSalum/Digital-electronics-1/blob/main/Labs/01-gates/pictures/Formula1.gif)**
 
 **c** | **b** | **a** | ![Test logo](https://github.com/TaaviSalum/Digital-electronics-1/blob/main/Labs/01-gates/pictures/Formula2.gif) 
 --- | --- | --- | ---
@@ -23,7 +23,7 @@
 1 | 1 | 1 | 0
 
 
-### **f(c,b,a)NAND = ((not b) nand a) nand ((not c) nand (not b))**
+### **![Test logo](https://github.com/TaaviSalum/Digital-electronics-1/blob/main/Labs/01-gates/pictures/Formula3.gif)**
 
 **c** | **b** | **a** | ![Test logo](https://github.com/TaaviSalum/Digital-electronics-1/blob/main/Labs/01-gates/pictures/Formula4.gif) 
 --- | --- | --- | ---
