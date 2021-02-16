@@ -21,8 +21,8 @@
 1 | 1 | 0 | 0
 1 | 1 | 1 | 0
 
-
 ### **VHDL Code:**
+```vhdl 
 -- Example of basic OR, AND, XOR gates.
 -- Nexys A7-50T, Vivado v2020.1, EDA Playground
 
@@ -52,7 +52,7 @@ begin
     f_o <= ((not b_i) and a_i) or ((not c_i) and (not b_i));
 
 end architecture dataflow;
-
+```
 
 ### **Waveform #1:**
 ![Test logo](https://github.com/TaaviSalum/Digital-electronics-1/blob/main/Labs/01-gates/pictures/Ex1.1.jpg)
@@ -79,8 +79,8 @@ end architecture dataflow;
 1 | 1 | 0 | 0
 1 | 1 | 1 | 0
 
-
 ### **VHDL Code:**
+```vhdl
 -- Example of basic OR, AND, XOR gates.
 -- Nexys A7-50T, Vivado v2020.1, EDA Playground
 
@@ -111,7 +111,7 @@ begin
     f_o <= ((not b_i) nand a_i) nand ((not c_i) nand (not b_i));
 
 end architecture dataflow;
-
+```
 
 ### **Waveform #2:**
 ![Test logo](https://github.com/TaaviSalum/Digital-electronics-1/blob/main/Labs/01-gates/pictures/Ex1.2.jpg)
@@ -138,8 +138,8 @@ end architecture dataflow;
 1 | 1 | 0 | 0
 1 | 1 | 1 | 0
 
-
 ### **VHDL Code:**
+```vhdl 
 -- Example of basic OR, AND, XOR gates.
 -- Nexys A7-50T, Vivado v2020.1, EDA Playground
 
@@ -170,7 +170,7 @@ begin
     f_o <= ((not b_i) nor a_i) nor ((not c_i) nor (not b_i));
 
 end architecture dataflow;
-
+```
 
 ### **Waveform #3:**
 ![Test logo](https://github.com/TaaviSalum/Digital-electronics-1/blob/main/Labs/01-gates/pictures/Ex1.3.jpg)
@@ -198,6 +198,7 @@ end architecture dataflow;
 1 | 1 | 1 | 1 | 1
 
 ### **VHDL Code:**
+```vhdl
 -- Example of basic OR, AND, XOR gates.
 -- Nexys A7-50T, Vivado v2020.1, EDA Playground
 
@@ -230,7 +231,7 @@ begin
     f_m <= a_i and (b_i or c_i);
 
 end architecture dataflow;
-
+```
 
 ### **Waveform #4:**
 ![Test logo](https://github.com/TaaviSalum/Digital-electronics-1/blob/main/Labs/01-gates/pictures/Ex2.1.jpg)
@@ -258,6 +259,7 @@ end architecture dataflow;
 1 | 1 | 1 | 1 | 1
 
 ### **VHDL Code:**
+```vhdl
 -- Example of basic OR, AND, XOR gates.
 -- Nexys A7-50T, Vivado v2020.1, EDA Playground
 
@@ -290,7 +292,7 @@ begin
     f_m <= a_i or (b_i and c_i);
 
 end architecture dataflow;
-
+```
 
 ### **Waveform #5:**
 ![Test logo](https://github.com/TaaviSalum/Digital-electronics-1/blob/main/Labs/01-gates/pictures/Ex2.2.jpg)
