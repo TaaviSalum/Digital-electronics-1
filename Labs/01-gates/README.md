@@ -11,7 +11,7 @@
 
 ![Test logo](https://github.com/TaaviSalum/Digital-electronics-1/blob/main/Labs/01-gates/pictures/Formula1.gif)
 
-**c** | **b** | **a** | **f(c,b,a)** 
+**c** | **b** | **a** | ![Test logo](https://github.com/TaaviSalum/Digital-electronics-1/blob/main/Labs/01-gates/pictures/Formula2.gif) 
 --- | --- | --- | ---
 0 | 0 | 0 | 1
 0 | 0 | 1 | 1
@@ -25,7 +25,7 @@
 
 ### **f(c,b,a)NAND = ((not b) nand a) nand ((not c) nand (not b))**
 
-**c** | **b** | **a** | **f(c,b,a)NAND** 
+**c** | **b** | **a** | ![Test logo](https://github.com/TaaviSalum/Digital-electronics-1/blob/main/Labs/01-gates/pictures/Formula4.gif) 
 --- | --- | --- | ---
 0 | 0 | 0 | 1
 0 | 0 | 1 | 1
@@ -39,7 +39,7 @@
 
 ### **f(c,b,a)NOR = ((not b) nor a) nor ((not c) nor (not b))**
 
-**c** | **b** | **a** | **f(c,b,a)NOR** 
+**c** | **b** | **a** | **![Test logo](https://github.com/TaaviSalum/Digital-electronics-1/blob/main/Labs/01-gates/pictures/Formula6.gif)** 
 --- | --- | --- | ---
 0 | 0 | 0 | 1
 0 | 0 | 1 | 1
