@@ -47,13 +47,13 @@
 
 ### **Simplified SoP form of the "greater than" function**
 ![Greater than function]()
-
+Greater_SoP = m4 + m8 + m9 + m12 + m13 + m14 = (/b1.b0./a1./a0) + (b1./b0./a1./a0) + (b1./b0./a1.a0) + (b1.b0./a1./a0) + (b1.b0./a1.a0) + (b1.b0.a1./a0)
 
 ### **Simplified PoS form of the "less than" function**
 ![Less than function]()
+Less_PoS = m0 . m4 . m5 . m8 . m9. m10 . m12 . m13 . m14 . m15 = (b1+b0+a1+a0 . (b1+/b0+a1+a0) . (b1+/b0+a1+/a0) . (/b1+b0+a1+a0) . (/b1+b0+a1+/a0) . (/b1+b0+/a1+a0) . (/b1+/b0+a1+a0) . (/b1+/b0+a1+/a0) . (/b1+/b0+/a1+a0) . (/b1+/b0+/a1+/a0)
 
-
-### **EDA playground example: **
+### **EDA playground example: https://www.edaplayground.com/x/8Qjr**
 
 
 
