@@ -34,15 +34,15 @@
 ### **Karnaugh maps**
 
 #### **Greater than function Karnaugh map**
-![Karnaugh map #1]()
+![Karnaugh map #1](https://github.com/TaaviSalum/Digital-electronics-1/blob/main/Labs/02-logic/Pictures/GreaterThan.jpg)
 
 
 #### **Equal to function Karnaugh map**
-![Karnaugh map #2]()
+![Karnaugh map #2](https://github.com/TaaviSalum/Digital-electronics-1/blob/main/Labs/02-logic/Pictures/EqualsTo.jpg)
 
 
 #### **Less than function Karnaugh map**
-![Karnaugh map #3]()
+![Karnaugh map #3](https://github.com/TaaviSalum/Digital-electronics-1/blob/main/Labs/02-logic/Pictures/LessThan.jpg)
 
 
 ### **Simplified SoP form of the "greater than" function**
