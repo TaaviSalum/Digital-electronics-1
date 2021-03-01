@@ -39,7 +39,7 @@ begin
            c_i when (sel_i = "10") else
            d_i; 
     
-end architecture behavioral;
+end architecture Behavioral;
 ```
 
 
@@ -100,7 +100,59 @@ end architecture Behavioral;
 ------------------------------------------------------------------------
 ## **Exercise 3: A Vivado tutorial**
 
+#### **Simulator console output**
+![Simulated time waveforms](https://github.com/TaaviSalum/Digital-electronics-1/blob/main/Labs/03-vivado/Pictures/Ex3_1.jpg)
 
+#### **Simulator console output**
+![Simulated time waveforms](https://github.com/TaaviSalum/Digital-electronics-1/blob/main/Labs/03-vivado/Pictures/Ex3_2.jpg)
+
+#### **Simulator console output**
+![Simulated time waveforms](https://github.com/TaaviSalum/Digital-electronics-1/blob/main/Labs/03-vivado/Pictures/Ex3_3.jpg)
+
+#### **Simulator console output**
+![Simulated time waveforms](https://github.com/TaaviSalum/Digital-electronics-1/blob/main/Labs/03-vivado/Pictures/Ex3_4.jpg)
+
+#### **Simulator console output**
+![Simulated time waveforms](https://github.com/TaaviSalum/Digital-electronics-1/blob/main/Labs/03-vivado/Pictures/Ex3_5.jpg)
+
+#### **Simulator console output**
+![Simulated time waveforms](https://github.com/TaaviSalum/Digital-electronics-1/blob/main/Labs/03-vivado/Pictures/Ex3_6.jpg)
+
+#### **Simulator console output**
+![Simulated time waveforms](https://github.com/TaaviSalum/Digital-electronics-1/blob/main/Labs/03-vivado/Pictures/Ex3_7.jpg)
+
+#### **Simulator console output**
+![Simulated time waveforms](https://github.com/TaaviSalum/Digital-electronics-1/blob/main/Labs/03-vivado/Pictures/Ex3_8.jpg)
+
+#### **Simulator console output**
+![Simulated time waveforms](https://github.com/TaaviSalum/Digital-electronics-1/blob/main/Labs/03-vivado/Pictures/Ex3_9.jpg)
+
+#### **Simulator console output**
+![Simulated time waveforms](https://github.com/TaaviSalum/Digital-electronics-1/blob/main/Labs/03-vivado/Pictures/Ex3_10.jpg)
+
+#### **Simulator console output**
+![Simulated time waveforms](https://github.com/TaaviSalum/Digital-electronics-1/blob/main/Labs/03-vivado/Pictures/Ex3_11.jpg)
+
+#### **Simulator console output**
+![Simulated time waveforms](https://github.com/TaaviSalum/Digital-electronics-1/blob/main/Labs/03-vivado/Pictures/Ex3_12.jpg)
+
+#### **Simulator console output**
+![Simulated time waveforms](https://github.com/TaaviSalum/Digital-electronics-1/blob/main/Labs/03-vivado/Pictures/Ex3_13.jpg)
+
+#### **Simulator console output**
+![Simulated time waveforms](https://github.com/TaaviSalum/Digital-electronics-1/blob/main/Labs/03-vivado/Pictures/Ex3_14.jpg)
+
+#### **Simulator console output**
+![Simulated time waveforms](https://github.com/TaaviSalum/Digital-electronics-1/blob/main/Labs/03-vivado/Pictures/Ex3_15.jpg)
+
+#### **Simulator console output**
+![Simulated time waveforms](https://github.com/TaaviSalum/Digital-electronics-1/blob/main/Labs/03-vivado/Pictures/Ex3_16.jpg)
+
+#### **Simulator console output**
+![Simulated time waveforms](https://github.com/TaaviSalum/Digital-electronics-1/blob/main/Labs/03-vivado/Pictures/Ex3_17.jpg)
+
+#### **Simulator console output**
+![Simulated time waveforms](https://github.com/TaaviSalum/Digital-electronics-1/blob/main/Labs/03-vivado/Pictures/Ex3_18.jpg)
 
 
 
