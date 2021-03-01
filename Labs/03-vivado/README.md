@@ -43,7 +43,7 @@ end architecture Behavioral;
 ```
 
 
-### **VHDL testbench code:**
+### **VHDL testbench:**
 ```vhdl 
 
 library IEEE;
@@ -100,59 +100,61 @@ end architecture Behavioral;
 ------------------------------------------------------------------------
 ## **Exercise 3: A Vivado tutorial**
 
-#### **Simulator console output**
-![Simulated time waveforms](https://github.com/TaaviSalum/Digital-electronics-1/blob/main/Labs/03-vivado/Pictures/Ex3_1.jpg)
+#### **Quick tutorial for Vivado design flow: how to create new project, how to add source file, testbench file and XDC constraints file and how to run simulation**
 
-#### **Simulator console output**
-![Simulated time waveforms](https://github.com/TaaviSalum/Digital-electronics-1/blob/main/Labs/03-vivado/Pictures/Ex3_2.jpg)
+#### **Step 1: Click "Create Project"**
+![Step 1](https://github.com/TaaviSalum/Digital-electronics-1/blob/main/Labs/03-vivado/Pictures/Ex3_1.jpg)
 
-#### **Simulator console output**
-![Simulated time waveforms](https://github.com/TaaviSalum/Digital-electronics-1/blob/main/Labs/03-vivado/Pictures/Ex3_3.jpg)
+#### **Step 2: Click "Next"**
+![Step 2](https://github.com/TaaviSalum/Digital-electronics-1/blob/main/Labs/03-vivado/Pictures/Ex3_2.jpg)
 
-#### **Simulator console output**
-![Simulated time waveforms](https://github.com/TaaviSalum/Digital-electronics-1/blob/main/Labs/03-vivado/Pictures/Ex3_4.jpg)
+#### **Step 3: Decide where do you want to save the project and click "Next"**
+![Step 3](https://github.com/TaaviSalum/Digital-electronics-1/blob/main/Labs/03-vivado/Pictures/Ex3_3.jpg)
 
-#### **Simulator console output**
-![Simulated time waveforms](https://github.com/TaaviSalum/Digital-electronics-1/blob/main/Labs/03-vivado/Pictures/Ex3_5.jpg)
+#### **Step 4: Make sure the project is a "RTL Project" and click "Next"**
+![Step 4](https://github.com/TaaviSalum/Digital-electronics-1/blob/main/Labs/03-vivado/Pictures/Ex3_4.jpg)
 
-#### **Simulator console output**
-![Simulated time waveforms](https://github.com/TaaviSalum/Digital-electronics-1/blob/main/Labs/03-vivado/Pictures/Ex3_6.jpg)
+#### **Step 5: To add source files click on one of the options but to make a new one click on "Create File"**
+![Step 5](https://github.com/TaaviSalum/Digital-electronics-1/blob/main/Labs/03-vivado/Pictures/Ex3_5.jpg)
 
-#### **Simulator console output**
-![Simulated time waveforms](https://github.com/TaaviSalum/Digital-electronics-1/blob/main/Labs/03-vivado/Pictures/Ex3_7.jpg)
+#### **Step 6: Make sure the file type is "VHDL" then name the source file and click "OK"**
+![Step 6](https://github.com/TaaviSalum/Digital-electronics-1/blob/main/Labs/03-vivado/Pictures/Ex3_6.jpg)
 
-#### **Simulator console output**
-![Simulated time waveforms](https://github.com/TaaviSalum/Digital-electronics-1/blob/main/Labs/03-vivado/Pictures/Ex3_8.jpg)
+#### **Step 7: Once all of the source files have been added click "Next"**
+![Step 7](https://github.com/TaaviSalum/Digital-electronics-1/blob/main/Labs/03-vivado/Pictures/Ex3_7.jpg)
 
-#### **Simulator console output**
-![Simulated time waveforms](https://github.com/TaaviSalum/Digital-electronics-1/blob/main/Labs/03-vivado/Pictures/Ex3_9.jpg)
+#### **Step 8: To add XDC constraint files click on of the options but to make a new one click on "Create File"**
+![Step 8](https://github.com/TaaviSalum/Digital-electronics-1/blob/main/Labs/03-vivado/Pictures/Ex3_8.jpg)
 
-#### **Simulator console output**
-![Simulated time waveforms](https://github.com/TaaviSalum/Digital-electronics-1/blob/main/Labs/03-vivado/Pictures/Ex3_10.jpg)
+#### **Step 9: Make sure the file type is "XDC" then name the XDC constraint file and click "OK"**
+![Step 9](https://github.com/TaaviSalum/Digital-electronics-1/blob/main/Labs/03-vivado/Pictures/Ex3_9.jpg)
 
-#### **Simulator console output**
-![Simulated time waveforms](https://github.com/TaaviSalum/Digital-electronics-1/blob/main/Labs/03-vivado/Pictures/Ex3_11.jpg)
+#### **Step 10: Once all of the XDC constraint files have been added click "Next"**
+![Step 10](https://github.com/TaaviSalum/Digital-electronics-1/blob/main/Labs/03-vivado/Pictures/Ex3_10.jpg)
 
-#### **Simulator console output**
-![Simulated time waveforms](https://github.com/TaaviSalum/Digital-electronics-1/blob/main/Labs/03-vivado/Pictures/Ex3_12.jpg)
+#### **Step 11: Find the FPGA you are using under "Parts" or "Boards"**
+![Step 11](https://github.com/TaaviSalum/Digital-electronics-1/blob/main/Labs/03-vivado/Pictures/Ex3_11.jpg)
 
-#### **Simulator console output**
-![Simulated time waveforms](https://github.com/TaaviSalum/Digital-electronics-1/blob/main/Labs/03-vivado/Pictures/Ex3_13.jpg)
+#### **Step 12: Once you have find it, select it and click "Next"**
+![Step 12](https://github.com/TaaviSalum/Digital-electronics-1/blob/main/Labs/03-vivado/Pictures/Ex3_12.jpg)
 
-#### **Simulator console output**
-![Simulated time waveforms](https://github.com/TaaviSalum/Digital-electronics-1/blob/main/Labs/03-vivado/Pictures/Ex3_14.jpg)
+#### **Step 13: Have a quick overview of the project and once everything is correct click "Finish"**
+![Step 13](https://github.com/TaaviSalum/Digital-electronics-1/blob/main/Labs/03-vivado/Pictures/Ex3_13.jpg)
 
-#### **Simulator console output**
-![Simulated time waveforms](https://github.com/TaaviSalum/Digital-electronics-1/blob/main/Labs/03-vivado/Pictures/Ex3_15.jpg)
+#### **Step 14: A window will pop-up and there you can add the testbench file and once everything is correct click "OK"**
+![Step 14](https://github.com/TaaviSalum/Digital-electronics-1/blob/main/Labs/03-vivado/Pictures/Ex3_14.jpg)
 
-#### **Simulator console output**
-![Simulated time waveforms](https://github.com/TaaviSalum/Digital-electronics-1/blob/main/Labs/03-vivado/Pictures/Ex3_16.jpg)
+#### **Step 15: Click "Yes"**
+![Step 15](https://github.com/TaaviSalum/Digital-electronics-1/blob/main/Labs/03-vivado/Pictures/Ex3_15.jpg)
 
-#### **Simulator console output**
-![Simulated time waveforms](https://github.com/TaaviSalum/Digital-electronics-1/blob/main/Labs/03-vivado/Pictures/Ex3_17.jpg)
+#### **Step 16: To run the simulation click "Run Simulation**
+![Step 16](https://github.com/TaaviSalum/Digital-electronics-1/blob/main/Labs/03-vivado/Pictures/Ex3_16.jpg)
 
-#### **Simulator console output**
-![Simulated time waveforms](https://github.com/TaaviSalum/Digital-electronics-1/blob/main/Labs/03-vivado/Pictures/Ex3_18.jpg)
+#### **Step 17: Click "Run Behavioral Simulation"**
+![Step 17](https://github.com/TaaviSalum/Digital-electronics-1/blob/main/Labs/03-vivado/Pictures/Ex3_17.jpg)
+
+#### **Step 18: Simulated time waveforms will appear on the right window *(For current tutorial there is no simulated time waveform)***
+![Step 18](https://github.com/TaaviSalum/Digital-electronics-1/blob/main/Labs/03-vivado/Pictures/Ex3_18.jpg)
 
 
 
