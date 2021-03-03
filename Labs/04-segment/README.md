@@ -1,12 +1,31 @@
 # **Digital-electronics-1**
-# **Laboratory #3**
+# **Laboratory #4**
 
 
 ------------------------------------------------------------------------
 ## **Exercise 1: Preparation tasks**
 
-#### **Connection of 16 slide switches and 16 LEDs on Nexys A7 board**
-![Nexys A7 board](https://github.com/TaaviSalum/Digital-electronics-1/blob/main/Labs/03-vivado/Pictures/Ex1.jpg)
+**Hex** | **Inputs** | **A** | **B** | **C** | **D** | **E** | **F** | **G** 
+--- | --- | --- | --- | --- | --- | --- | --- | ---
+0 | 0000 | 0 | 0 | 0 | 0 | 0 | 0 | 1 
+1 | 0001 | 1 | 0 | 0 | 1 | 1 | 1 | 1 
+2 | 0010 | 0 | 0 | 1 | 0 | 0 | 1 | 0
+3 | 0011 | 0 | 0 | 0 | 0 | 1 | 1 | 0
+4 | 0100 | 1 | 0 | 0 | 1 | 1 | 0 | 0
+5 | 0101 | 0 | 1 | 0 | 0 | 1 | 0 | 0
+6 | 0110 | 0 | 0 | 0 | 0 | 0 | 0 | 0
+7 | 0111 | 0 | 0 | 0 | 0 | 0 | 0 | 0
+8 | 1000 | 0 | 0 | 0 | 0 | 0 | 0 | 0
+9 | 1001 | 0 | 0 | 0 | 0 | 0 | 0 | 0
+A | 1010 | 0 | 0 | 0 | 0 | 0 | 0 | 0
+B | 1011 | 0 | 0 | 0 | 0 | 0 | 0 | 0
+C | 1100 | 0 | 0 | 0 | 0 | 0 | 0 | 0
+D | 1101 | 0 | 0 | 0 | 0 | 0 | 0 | 0
+E | 1110 | 0 | 0 | 0 | 0 | 0 | 0 | 0
+F | 1111 | 0 | 0 | 0 | 0 | 0 | 0 | 0
+
+
+**NOT DONE**
 
 
 
@@ -100,61 +119,82 @@ end architecture Behavioral;
 ------------------------------------------------------------------------
 ## **Exercise 3: A Vivado tutorial**
 
-#### **Quick tutorial for Vivado design flow: how to create new project, how to add source file, testbench file and XDC constraints file and how to run simulation**
+----------------------------------------------------------------------------------
+-- Company: 
+-- Engineer: 
+-- 
+-- Create Date: 03/03/2021 11:22:51 AM
+-- Design Name: 
+-- Module Name: hex_7seg - Behavioral
+-- Project Name: 
+-- Target Devices: 
+-- Tool Versions: 
+-- Description: 
+-- 
+-- Dependencies: 
+-- 
+-- Revision:
+-- Revision 0.01 - File Created
+-- Additional Comments:
+-- 
+----------------------------------------------------------------------------------
 
-#### **Step 1: Click "Create Project"**
-![Step 1](https://github.com/TaaviSalum/Digital-electronics-1/blob/main/Labs/03-vivado/Pictures/Ex3_1.jpg)
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
 
-#### **Step 2: Click "Next"**
-![Step 2](https://github.com/TaaviSalum/Digital-electronics-1/blob/main/Labs/03-vivado/Pictures/Ex3_2.jpg)
+entity hex_7seg is
+    Port (
+        signal hex_i    : std_logic_vector(4 - 1 downto 0);  -- Input binary data
+        signal seg_o    : std_logic_vector(7 - 1 downto 0)   -- Cathode values
+    );
+end hex_7seg;
 
-#### **Step 3: Decide where do you want to save the project and click "Next"**
-![Step 3](https://github.com/TaaviSalum/Digital-electronics-1/blob/main/Labs/03-vivado/Pictures/Ex3_3.jpg)
+architecture Behavioral of hex_7seg is
+begin
 
-#### **Step 4: Make sure the project is a "RTL Project" and click "Next"**
-![Step 4](https://github.com/TaaviSalum/Digital-electronics-1/blob/main/Labs/03-vivado/Pictures/Ex3_4.jpg)
+    p_7seg_decoder : process(hex_i)
+    begin
+        case hex_i is
+            when "0000" =>
+                seg_o <= "0000001";     -- 0
+            when "0001" =>
+                seg_o <= "1001111";     -- 1
+            when "0010" =>
+                seg_o <= "0010010";     -- 2
+            when "0011" =>
+                seg_o <= "0000110";     -- 3
+            when "0100" =>
+                seg_o <= "1001100";     -- 4
+            when "0101" =>
+                seg_o <= "0100100";     -- 5
+            when "0110" =>
+                seg_o <= "0100000";     -- 6
+            when "0111" =>
+                seg_o <= "0001111";     -- 7
+            when "1000" =>
+                seg_o <= "0000000";     -- 8
+    
+            -- 9, A, B, C, D, E, F
+            
+            when "1001" =>
+                seg_o <= "0001100";     -- 9
+            when "1010" =>
+                seg_o <= "0001000";     -- A
+            when "1011" =>
+                seg_o <= "1100000";     -- B
+            when "1100" =>
+                seg_o <= "0110001";     -- C
+            when "1101" =>
+                seg_o <= "1000010";     -- D
+            when "1110" =>
+                seg_o <= "0110000";     -- E
+            when others =>
+                seg_o <= "0111000";     -- F
+        end case;
+    end process p_7seg_decoder;
 
-#### **Step 5: To add source files click on one of the options but to make a new one click on "Create File"**
-![Step 5](https://github.com/TaaviSalum/Digital-electronics-1/blob/main/Labs/03-vivado/Pictures/Ex3_5.jpg)
+end architecture behavioral;
 
-#### **Step 6: Make sure the file type is "VHDL" then name the source file and click "OK"**
-![Step 6](https://github.com/TaaviSalum/Digital-electronics-1/blob/main/Labs/03-vivado/Pictures/Ex3_6.jpg)
-
-#### **Step 7: Once all of the source files have been added click "Next"**
-![Step 7](https://github.com/TaaviSalum/Digital-electronics-1/blob/main/Labs/03-vivado/Pictures/Ex3_7.jpg)
-
-#### **Step 8: To add XDC constraint files click on of the options but to make a new one click on "Create File"**
-![Step 8](https://github.com/TaaviSalum/Digital-electronics-1/blob/main/Labs/03-vivado/Pictures/Ex3_8.jpg)
-
-#### **Step 9: Make sure the file type is "XDC" then name the XDC constraint file and click "OK"**
-![Step 9](https://github.com/TaaviSalum/Digital-electronics-1/blob/main/Labs/03-vivado/Pictures/Ex3_9.jpg)
-
-#### **Step 10: Once all of the XDC constraint files have been added click "Next"**
-![Step 10](https://github.com/TaaviSalum/Digital-electronics-1/blob/main/Labs/03-vivado/Pictures/Ex3_10.jpg)
-
-#### **Step 11: Find the FPGA you are using under "Parts" or "Boards"**
-![Step 11](https://github.com/TaaviSalum/Digital-electronics-1/blob/main/Labs/03-vivado/Pictures/Ex3_11.jpg)
-
-#### **Step 12: Once you have find it, select it and click "Next"**
-![Step 12](https://github.com/TaaviSalum/Digital-electronics-1/blob/main/Labs/03-vivado/Pictures/Ex3_12.jpg)
-
-#### **Step 13: Have a quick overview of the project and once everything is correct click "Finish"**
-![Step 13](https://github.com/TaaviSalum/Digital-electronics-1/blob/main/Labs/03-vivado/Pictures/Ex3_13.jpg)
-
-#### **Step 14: A window will pop-up and there you can add the testbench file and once everything is correct click "OK"**
-![Step 14](https://github.com/TaaviSalum/Digital-electronics-1/blob/main/Labs/03-vivado/Pictures/Ex3_14.jpg)
-
-#### **Step 15: Click "Yes"**
-![Step 15](https://github.com/TaaviSalum/Digital-electronics-1/blob/main/Labs/03-vivado/Pictures/Ex3_15.jpg)
-
-#### **Step 16: To run the simulation click "Run Simulation**
-![Step 16](https://github.com/TaaviSalum/Digital-electronics-1/blob/main/Labs/03-vivado/Pictures/Ex3_16.jpg)
-
-#### **Step 17: Click "Run Behavioral Simulation"**
-![Step 17](https://github.com/TaaviSalum/Digital-electronics-1/blob/main/Labs/03-vivado/Pictures/Ex3_17.jpg)
-
-#### **Step 18: Simulated time waveforms will appear on the right window *(For current tutorial there is no simulated time waveform)***
-![Step 18](https://github.com/TaaviSalum/Digital-electronics-1/blob/main/Labs/03-vivado/Pictures/Ex3_18.jpg)
 
 
 
