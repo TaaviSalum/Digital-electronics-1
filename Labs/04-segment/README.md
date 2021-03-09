@@ -85,7 +85,6 @@ begin
 end architecture behavioral;
 ```
 
-
 ### **VHDL stimulus process from testbench file:**
 ```vhdl 
     p_stimulus : process
@@ -128,7 +127,7 @@ end architecture behavioral;
         
         s_hex <= "1000"; wait for 10 ns;
         assert (s_seg = "0000000")
-        report "Test failed for input: 1000 which is 9" severity error;
+        report "Test failed for input: 1000 which is 8" severity error;
         
         -- 9, A, B, C, D, E, F
         
