@@ -82,7 +82,7 @@ begin
         end case;
     end process p_7seg_decoder;
 
-end architecture behavioral;
+end architecture Behavioral;
 ```
 
 ### **VHDL stimulus process from testbench file:**
