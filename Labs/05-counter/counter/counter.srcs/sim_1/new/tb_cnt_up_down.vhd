@@ -33,7 +33,6 @@ architecture testbench of tb_cnt_up_down is
     signal s_reset      : std_logic;
     signal s_en         : std_logic;
     signal s_cnt_up     : std_logic;
-    signal s_cnt_down   : std_logic;
     signal s_cnt        : std_logic_vector(c_CNT_WIDTH - 1 downto 0);
 
 begin
@@ -48,7 +47,6 @@ begin
             reset       => s_reset,
             en_i        => s_en,
             cnt_up_i    => s_cnt_up,
-            cnt_down_i  => s_cnt_down,
             cnt_o       => s_cnt
         );
 
@@ -92,16 +90,11 @@ begin
         -- Enable counting
         s_en     <= '1';
         
-        -- Change counter direction
-        s_cnt_down <= '0';
         s_cnt_up <= '1';
         wait for 380 ns;
         s_cnt_up <= '0';
-        wait for 10 ns;
-        s_cnt_down <= '1';
-        wait for 200 ns;
-        s_cnt_down <= '0';
-        wait for 10 ns;
+        wait for 380 ns;
+
 
         -- Disable counting
         s_en     <= '0';

@@ -29,18 +29,18 @@
 
 ### **VHDL code of the process:**
 ```vhdl 
-    p_cnt_up_down : process(clk)
+p_cnt_up_down : process(clk)
     begin
         if rising_edge(clk) then
         
             if (reset = '1') then               -- Synchronous reset
                 s_cnt_local <= (others => '0'); -- Clear all bits
 
-            elsif (en_i = '1' AND cnt_up_i = '1') then       -- Adds +1 if enable is '1'
+            elsif (en_i = '1' AND cnt_up_i = '1') then    -- Adds +1 if enable is '1' and count up is '1'
                 s_cnt_local <= s_cnt_local + 1;
 
                 -- TEST COUNTER DIRECTION HERE
-            elsif (en_i = '1' AND cnt_down_i = '1') then    -- Adds -1 if enable is '1'
+            elsif (en_i = '1' AND cnt_up_i = '0') then    -- Adds -1 if enable is '1' and count up is '0'
                 s_cnt_local <= s_cnt_local - 1;
 
 
@@ -77,16 +77,11 @@
         -- Enable counting
         s_en     <= '1';
         
-        -- Change counter direction
-        s_cnt_down <= '0';
         s_cnt_up <= '1';
         wait for 380 ns;
         s_cnt_up <= '0';
-        wait for 10 ns;
-        s_cnt_down <= '1';
-        wait for 200 ns;
-        s_cnt_down <= '0';
-        wait for 10 ns;
+        wait for 380 ns;
+
 
         -- Disable counting
         s_en     <= '0';
@@ -114,7 +109,7 @@ use IEEE.STD_LOGIC_1164.ALL;
 entity top is
     Port ( CLK100MHZ : in STD_LOGIC;
            BTNC : in STD_LOGIC;
-           SW : in STD_LOGIC_VECTOR (1 downto 0);
+           SW : in STD_LOGIC_VECTOR (0 downto 0);
            LED : out STD_LOGIC_VECTOR (3 downto 0);
            CA : out STD_LOGIC;
            CB : out STD_LOGIC;
@@ -160,8 +155,7 @@ begin
             clk         => CLK100MHZ,
             reset       => BTNC,
             en_i        => s_en,
-            cnt_up_i    => SW(1),
-            cnt_down_i  => SW(0),
+            cnt_up_i    => SW(0),
             cnt_o       => s_cnt
         );
 
@@ -185,7 +179,7 @@ begin
     -- Connect one common anode to 3.3V
     AN <= b"1111_1110";
               
-end architecture Behavioral;
+end architecture behavioral;
 ```
 
 ### **Sketch of the top layer:**
