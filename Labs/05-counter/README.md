@@ -183,7 +183,7 @@ end architecture Behavioral;
 ```
 
 ### **Sketch of the top layer:**
-![Sketch of the top layer](https://github.com/TaaviSalum/Digital-electronics-1/blob/main/Labs/05-counter/Pictures/Ex3.png)
+![Sketch of the top layer](https://github.com/TaaviSalum/Digital-electronics-1/blob/main/Labs/05-counter/Pictures/Ex3.jpg)
 
 
 
