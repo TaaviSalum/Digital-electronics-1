@@ -5,7 +5,7 @@
 ------------------------------------------------------------------------
 ## **Exercise 1: Preparation tasks**
 
-### **Timing diagram figure for displaying value ```vhdl 3.142```**
+### **Timing diagram figure for displaying value #### ```vhdl 3.142```**
 ![Simulated time waveforms](https://github.com/TaaviSalum/Digital-electronics-1/blob/main/Labs/06-display_driver/Pictures/Ex1.png)
 
 
@@ -15,13 +15,13 @@
 ------------------------------------------------------------------------
 ## **Exercise 2: Display driver**
 
-### **VHDL code of the process ```vhdl p_mux```:**
+### **VHDL code of the process #### ```vhdl p_mux```:**
 ```vhdl 
 
 ```
 
 
-## **VHDL testbench file ```vhdl tb_driver_7seg_4digits```:**
+### **VHDL testbench file #### ```vhdl tb_driver_7seg_4digits```:**
 ```vhdl 
 
 ```
