@@ -6,7 +6,7 @@
 ## **Exercise 1: Preparation tasks**
 
 ### **Timing diagram figure for displaying value ```vhdl 3.142```**
-![Simulated time waveforms](https://github.com/TaaviSalum/Digital-electronics-1/blob/main/Labs/05-counter/Pictures/Ex1.png)
+![Simulated time waveforms](https://github.com/TaaviSalum/Digital-electronics-1/blob/main/Labs/06-display_driver/Pictures/Ex1.png)
 
 
 
@@ -28,7 +28,7 @@
 
 
 ### **Simulated time waveforms**
-![Simulated time waveforms](https://github.com/TaaviSalum/Digital-electronics-1/blob/main/Labs/05-counter/Pictures/Ex2.png)
+![Simulated time waveforms](https://github.com/TaaviSalum/Digital-electronics-1/blob/main/Labs/06-display_driver/Pictures/Ex2.png)
 
 
 ### **VHDL code of the top layer architecture:**
@@ -44,7 +44,7 @@
 ## **Exercise 3: Eight-digit driver**
 
 ### **Sketch of the driver schematic:**
-![Sketch of the driver schematic](https://github.com/TaaviSalum/Digital-electronics-1/blob/main/Labs/05-counter/Pictures/Ex3.jpg)
+![Sketch of the driver schematic](https://github.com/TaaviSalum/Digital-electronics-1/blob/main/Labs/06-display_driver/Pictures/Ex3.jpg)
 
 
 
