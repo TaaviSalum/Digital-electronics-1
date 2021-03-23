@@ -2,5 +2,11 @@ Vivado Simulator 2020.2
 Time resolution is 1 ps
 Note: Stimulus process started
 Time: 0 ps  Iteration: 0  Process: /tb_driver_7seg_4digits/p_stimulus  File: C:/Users/Taavi/OneDrive/Dokumendid/Github/Digital-electronics-1/Labs/06-display_driver/display_driver/display_driver.srcs/sim_1/new/tb_driver_7seg_4digits.vhd
+Error: Test failed for input: 3
+Time: 1000100 ns  Iteration: 0  Process: /tb_driver_7seg_4digits/p_stimulus  File: C:/Users/Taavi/OneDrive/Dokumendid/Github/Digital-electronics-1/Labs/06-display_driver/display_driver/display_driver.srcs/sim_1/new/tb_driver_7seg_4digits.vhd
+Error: Test failed for input: 1
+Time: 2000100 ns  Iteration: 0  Process: /tb_driver_7seg_4digits/p_stimulus  File: C:/Users/Taavi/OneDrive/Dokumendid/Github/Digital-electronics-1/Labs/06-display_driver/display_driver/display_driver.srcs/sim_1/new/tb_driver_7seg_4digits.vhd
+Error: Test failed for input: 4
+Time: 3000100 ns  Iteration: 0  Process: /tb_driver_7seg_4digits/p_stimulus  File: C:/Users/Taavi/OneDrive/Dokumendid/Github/Digital-electronics-1/Labs/06-display_driver/display_driver/display_driver.srcs/sim_1/new/tb_driver_7seg_4digits.vhd
 Note: Stimulus process finished
-Time: 160 ns  Iteration: 0  Process: /tb_driver_7seg_4digits/p_stimulus  File: C:/Users/Taavi/OneDrive/Dokumendid/Github/Digital-electronics-1/Labs/06-display_driver/display_driver/display_driver.srcs/sim_1/new/tb_driver_7seg_4digits.vhd
+Time: 5000100 ns  Iteration: 0  Process: /tb_driver_7seg_4digits/p_stimulus  File: C:/Users/Taavi/OneDrive/Dokumendid/Github/Digital-electronics-1/Labs/06-display_driver/display_driver/display_driver.srcs/sim_1/new/tb_driver_7seg_4digits.vhd

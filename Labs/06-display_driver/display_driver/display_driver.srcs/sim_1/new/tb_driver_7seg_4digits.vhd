@@ -66,7 +66,7 @@ begin
     --------------------------------------------------------------------
     p_clk_gen : process
     begin
-        while now < 750 ns loop         -- 75 periods of 100MHz clock
+        while now < 40 ms loop        
             s_clk_100MHz <= '0';
             wait for c_CLK_100MHZ_PERIOD / 2;
             s_clk_100MHz <= '1';
@@ -81,11 +81,11 @@ begin
     p_reset_gen : process
     begin
         s_reset <= '0';
-        wait for 50 ns;
+        wait for 12 ns;
         
         -- Reset activated
         s_reset <= '1';
-        wait for 50 ns;
+        wait for 88 ns;
 
         s_reset <= '0';
         wait;
@@ -101,23 +101,30 @@ begin
         
         wait for 100 ns;
         
-        -- 3
-        s_dpi    <= "0011";
-        s_data3  <= "0011";
-        wait for 10 ns;
-        --assert (s_seg = "0000110" AND s_dpo = '0');
-        --report "Test failed for input: 0011 which is 3" severity error;
-        wait for 50 ns;
+        s_data3  <= "0011"; -- 3
+        s_dpi    <= "0111"; -- .
+        s_data2  <= "0001"; -- 1
+        s_data1  <= "0100"; -- 4
+        s_data0  <= "0010"; -- 2
         
-        -- 1
-
+        wait for 1 ms;
         
-        -- 4
-  
+        assert ((s_dig = "0111") and (s_seg = "0000110") and (s_dpo = '0'))
+        report "Test failed for input: 3" severity error;
+        wait for 1 ms;
         
-        -- 2
-      
-       
+        assert ((s_dig = "1011") and (s_seg = "1001111") and (s_dpo = '1'))
+        report "Test failed for input: 1" severity error;
+        wait for 1 ms;
+        
+        assert ((s_dig = "1101") and (s_seg = "1001100") and (s_dpo = '1'))
+        report "Test failed for input: 4" severity error;
+        wait for 1 ms;
+        
+        assert ((s_dig = "1110") and (s_seg = "0010010") and (s_dpo = '1'))
+        report "Test failed for input: 2" severity error;
+        wait for 1 ms;     
+             
         report "Stimulus process finished" severity note;
         wait;
     end process p_stimulus;
