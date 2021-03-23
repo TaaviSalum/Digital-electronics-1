@@ -29,13 +29,38 @@ architecture testbench of tb_driver_7seg_4digits is
 
     --Local signals
     signal s_clk_100MHz : std_logic;
-    --- WRITE YOUR CODE HERE
-
+    signal s_reset      : std_logic;
+    -- 4-bit input values for individual digits
+    signal s_data0      : std_logic_vector(4 - 1 downto 0);
+    signal s_data1      : std_logic_vector(4 - 1 downto 0);
+    signal s_data2      : std_logic_vector(4 - 1 downto 0);
+    signal s_data3      : std_logic_vector(4 - 1 downto 0);
+    -- 4-bit input value for decimal points
+    signal s_dpi        : std_logic_vector(4 - 1 downto 0);
+    -- Decimal point for specific digit
+    signal s_dpo        : std_logic;
+    -- Cathode values for individual segments
+    signal s_seg        : std_logic_vector(7 - 1 downto 0);
+    -- Common anode signals to individual displays
+    signal s_dig        : std_logic_vector(4 - 1 downto 0);
+    
 begin
     -- Connecting testbench signals with driver_7seg_4digits entity
     -- (Unit Under Test)
-    --- WRITE YOUR CODE HERE
-
+    uut_cnt : entity work.driver_7seg_4digits
+        port map(
+            clk       => s_clk_100MHz,
+            reset     => s_reset,
+            data0_i   => s_data0,
+            data1_i   => s_data1,
+            data2_i   => s_data2,
+            data3_i   => s_data3,
+            dp_i      => s_dpi,
+            dp_o      => s_dpo,
+            seg_o     => s_seg,
+            dig_O     => s_dig  
+        
+        );
     --------------------------------------------------------------------
     -- Clock generation process
     --------------------------------------------------------------------
@@ -53,11 +78,48 @@ begin
     --------------------------------------------------------------------
     -- Reset generation process
     --------------------------------------------------------------------
-    --- WRITE YOUR CODE HERE
+    p_reset_gen : process
+    begin
+        s_reset <= '0';
+        wait for 50 ns;
+        
+        -- Reset activated
+        s_reset <= '1';
+        wait for 50 ns;
+
+        s_reset <= '0';
+        wait;
+    end process p_reset_gen;
 
     --------------------------------------------------------------------
     -- Data generation process
     --------------------------------------------------------------------
     --- WRITE YOUR CODE HERE
+    p_stimulus : process
+    begin
+        report "Stimulus process started" severity note;
+        
+        wait for 100 ns;
+        
+        -- 3
+        s_dpi    <= "0011";
+        s_data3  <= "0011";
+        wait for 10 ns;
+        --assert (s_seg = "0000110" AND s_dpo = '0');
+        --report "Test failed for input: 0011 which is 3" severity error;
+        wait for 50 ns;
+        
+        -- 1
 
+        
+        -- 4
+  
+        
+        -- 2
+      
+       
+        report "Stimulus process finished" severity note;
+        wait;
+    end process p_stimulus;
+   
 end architecture testbench;
