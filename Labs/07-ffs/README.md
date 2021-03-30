@@ -623,7 +623,7 @@
 ## **Exercise 4: Shift register schematic**
 
 ### **Sketch of the shift register schematic:**
-![Sketch of the shift register schematic](https://github.com/TaaviSalum/Digital-electronics-1/blob/main/Labs/06-display_driver/Pictures/Ex4.jpg)
+![Sketch of the shift register schematic](https://github.com/TaaviSalum/Digital-electronics-1/blob/main/Labs/07-ffs/Pictures/Ex4.jpg)
 
 
 
