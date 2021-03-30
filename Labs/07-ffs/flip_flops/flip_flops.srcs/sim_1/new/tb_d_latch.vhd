@@ -44,22 +44,101 @@ begin
             q_bar       => s_q_bar
         );
 
-    --------------------------------------------------------------------
-    -- Data generation process
-    --------------------------------------------------------------------
-p_stimulus : process
-    begin
-        report "Stimulus process started" severity note;
+--------------------------------------------------------------------
+-- Reset generation process
+--------------------------------------------------------------------
+    p_reset_gen : process
+        begin
+	       s_arst <= '0';
+	       wait for 152 ns;
+	       s_arst <= '1';  -- Reset
+	       wait for 212 ns;
+	       s_arst <= '0';
+	       wait for 320 ns;
+	       s_arst <= '1';  -- Reset
+	       wait;
+    end process p_reset_gen;
 
+--------------------------------------------------------------------
+-- Data generation process
+--------------------------------------------------------------------
+    p_stimulus : process
+        begin
+	       report "Stimulus process started" severity note;
+	
+	       s_en <= '0';
+	       s_d  <= '0';
+	       wait for 40 ns;
+	       s_d  <= '1';
+	       wait for 40 ns;
+	       s_d  <= '0';
+	       wait for 40 ns;
+	       s_d  <= '1';
+	       wait for 40 ns;
+	       s_d  <= '0';
+	       wait for 20 ns;
+		
+	       assert ((s_arst = '1') and (s_en = '0') and (s_q = '0') and (s_q_bar = '1'))
+	       report "Test failed for RESET is '1', EN is '0' and D is '0'" severity error;
+	
+	       wait for 20 ns;
+	       s_d  <= '1';
+	       wait for 20 ns;
+	
+	       assert ((s_arst = '1') and (s_en = '0') and (s_q = '0') and (s_q_bar = '1'))
+	       report "Test failed for RESET is '1', EN is '0' and D is '1'" severity error;
+	
+	       wait for 20 ns;
+	       s_d  <= '0';
+	       s_en <= '1';
+	       wait for 40 ns;
+	       s_d  <= '1';
+	       wait for 20 ns;
+	
+	       assert ((s_arst = '1') and (s_en = '1') and (s_q = '0') and (s_q_bar = '1'))
+	       report "Test failed for RESET is '1', EN is '1' and D is '1'" severity error;
+	
+	       wait for 20 ns;
+	       s_d  <= '0';
+	       wait for 20 ns;
+		
+	       assert ((s_arst = '1') and (s_en = '1') and (s_q = '0') and (s_q_bar = '1'))
+	       report "Test failed for RESET is '1', EN is '1' and D is '0'" severity error;          
+	
+	       wait for 20 ns;
+	       s_d  <= '1';
+	       wait for 40 ns;
+	       s_d  <= '0';
+	       wait for 40 ns;
+	       s_d  <= '1';
+	       wait for 20 ns;
+	
+	       assert ((s_arst = '0') and (s_en = '1') and (s_q = '1') and (s_q_bar = '0'))
+	       report "Test failed for RESET is '0', EN is '1' and D is '1'" severity error;
+	
+	       wait for 60 ns;
+	       s_d  <= '0';
+	       wait for 20 ns;
+	
+	       assert ((s_arst = '0') and (s_en = '1') and (s_q = '0') and (s_q_bar = '1'))
+	       report "Test failed for RESET is '0', EN is '1' and D i '0'" severity error;
 
-        --s_b <= "0000"; s_a <= "0000"; wait for 100 ns;
-        --assert ((s_B_greater_A = '0') and (s_B_equals_A = '1') and (s_B_less_A = '0'))
-        --report "Test failed for input combination: 0000, 0000" severity error;
+	       wait for 20 ns;
+	       s_d  <= '1';
+	       wait for 20 ns;
+	       s_en <= '0';
+	       wait for 20 ns;
+	       s_d  <= '0';
+	       wait for 40 ns;
+	       s_d  <= '1';
+	       wait for 40 ns;
+	       s_d  <= '0';
+	       wait for 40 ns;
+	       s_d  <= '1';
+	       wait for 40 ns;
+	       s_d  <= '0';
 
-      
-
-        report "Stimulus process finished" severity note;
-        wait;
+	       report "Stimulus process finished" severity note;
+	       wait;
     end process p_stimulus;
-    
 end Behavioral;
