@@ -147,7 +147,11 @@ LD17 | N16, R11, G14 | ```1,0,0``` | ```1,1,0``` | ```0,1,0```
 ## **Exercise 3: Smart controller**
 
 ### **State table**
-
+**Input** | No cars | ```West_i``` | ```West_i``` | ```West_i``` | No cars | ```South_i``` | ```South_I``` | ```South_i``` AND ```West_i``` | ```South_i``` AND ```West_i``` | ```South_i``` AND ```West_i``` | ```South_i``` AND ```West_i```
+--- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | ---
+**Delay** | 4 seconds | 1 second | 4 seconds | 4 seconds | 4 seconds | 1 second | 4 seconds | 1 second | 4 seconds | 1 second | 4 seconds 
+**State** | ```South_go``` | ```South_wait``` | ```West_go``` | ```West_go``` | ```West_go``` | ```West_wait``` | ```South_go``` | ```South_wait``` | ```West_go``` | ```West_wait``` | ```South_go```
+**Output** | S: Green; W: Red | S: Yellow; W: Red | S: Red; W: Green |  S: Red; W: Green | S: Red; W: Green | S: Red; W: Yellow | S: Green; W: Red | S: Yellow; W: Red | S: Red; W: Green | S: Red; W: Yellow | S: Green; W: Red 
 
 
 ### **State diagram**
