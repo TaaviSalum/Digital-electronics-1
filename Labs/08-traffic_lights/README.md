@@ -147,7 +147,7 @@ LD17 | N16, R11, G14 | ```1,0,0``` | ```1,1,0``` | ```0,1,0```
 ## **Exercise 3: Smart controller**
 
 ### **State table**
-**Input** | No cars | ```West_i``` | ```West_i``` | ```West_i``` | No cars | ```South_i``` | ```South_I``` | ```South_i``` AND ```West_i``` | ```South_i``` AND ```West_i``` | ```South_i``` AND ```West_i``` | ```South_i``` AND ```West_i```
+**Input** | No cars | ```West_i``` | ```West_i``` | ```West_i``` | No cars | ```South_i``` | ```South_i``` | ```South_i``` AND ```West_i``` | ```South_i``` AND ```West_i``` | ```South_i``` AND ```West_i``` | ```South_i``` AND ```West_i```
 --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | ---
 **Delay** | 4 seconds | 1 second | 4 seconds | 4 seconds | 4 seconds | 1 second | 4 seconds | 1 second | 4 seconds | 1 second | 4 seconds 
 **State** | ```South_go``` | ```South_wait``` | ```West_go``` | ```West_go``` | ```West_go``` | ```West_wait``` | ```South_go``` | ```South_wait``` | ```West_go``` | ```West_wait``` | ```South_go```
@@ -160,7 +160,66 @@ LD17 | N16, R11, G14 | ```1,0,0``` | ```1,1,0``` | ```0,1,0```
 
 ### **VHDL code of the sequential process ```p_smart_traffic_fsm```:**
 ```vhdl 
-
+    p_smart_traffic_fsm : process(clk)
+    begin
+        if rising_edge(clk) then
+            if (reset = '1') then       -- Synchronous reset
+                s_state <= STOP1 ;      -- Set initial state
+                s_cnt   <= c_ZERO;      -- Clear all bits
+            elsif (s_en = '1') then
+                -- Every 250 ms, CASE checks the value of the s_state 
+                -- variable and changes to the next state according 
+                -- to the delay value.
+                case s_state is
+                    when South_go =>
+                        -- Count up to c_DELAY_4SEC
+                        if (s_cnt < c_DELAY_4SEC) then
+                                s_cnt <= s_cnt + 1;
+                        elsif (west_i = '1') then
+                            -- Move to the next state
+                            s_state <= South_wait;
+                            -- Reset local counter value
+                            s_cnt   <= c_ZERO;
+                        end if;
+                    when South_wait =>
+                        -- Count up to c_DELAY_1SEC
+                        if (s_cnt < c_DELAY_1SEC) then
+                                s_cnt <= s_cnt + 1;
+                        else
+                            -- Move to the next state
+                            s_state <= West_go;
+                            -- Reset local counter value
+                            s_cnt   <= c_ZERO;
+                        end if;
+                    when West_go =>
+                        -- Count up to c_DELAY_4SEC
+                        if (s_cnt < c_DELAY_4SEC) then
+                                s_cnt <= s_cnt + 1;
+                        elsif (South_i = '1') then
+                            -- Move to the next state
+                            s_state <= West_wait;
+                            -- Reset local counter value
+                            s_cnt   <= c_ZERO;
+                        end if;
+                    when West_wait =>
+                        -- Count up to c_DELAY_1SEC
+                        if (s_cnt < c_DELAY_1SEC) then
+                                s_cnt <= s_cnt + 1;
+                        else
+                            -- Move to the next state
+                            s_state <= South_go;
+                            -- Reset local counter value
+                            s_cnt   <= c_ZERO;
+                        end if;
+                    -- It is a good programming practice to use the 
+                    -- OTHERS clause, even if all CASE choices have 
+                    -- been made. 
+                    when others =>
+                        s_state <= South_go;
+                end case;
+            end if; -- Synchronous reset
+        end if; -- Rising edge
+    end process p_smart_traffic_fsm;
 ```
 
 
