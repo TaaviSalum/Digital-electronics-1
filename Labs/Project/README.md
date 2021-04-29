@@ -77,7 +77,7 @@ J2 | 5-146254-8 | TE Connectivity | Header & Wire Housing, Through-hole, Pitch -
 ### **External PCB 3D model from top side**
 ![External PCB 3D model from top side](https://github.com/TaaviSalum/Digital-electronics-1/blob/main/Labs/Project/Pictures/External_PCB_3D_TOP.png)
 
-!!!Small disclaimer: the actual colours of the U3 (HDSP-4832 / LED bar) is different than in the picture because we couldn't find the correct 3D model. Starting from the bottom the first three LEDs are green, then four yellow LEDs and then three red LEDs!!!
+**Small disclaimer: the actual colours of the U3 (HDSP-4832 / LED bar) is different than in the picture because we couldn't find the correct 3D model. Starting from the bottom the first three LEDs are green, then four yellow LEDs and then three red LEDs**
 
 ### **External PCB 3D model from bottom side**
 ![External PCB 3D model from bottom side](https://github.com/TaaviSalum/Digital-electronics-1/blob/main/Labs/Project/Pictures/External_PCB_3D_BOT.png)
