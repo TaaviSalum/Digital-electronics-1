@@ -31,22 +31,22 @@ Green LEDs show that the object is still far. Yellow LEDs show that the object i
 For FPGA board we are using Arty A7-35T because it has enough external ports for us to use. We also have external 2 layer PCB which we use. 
 It connects straight on top of Arduino/chipKIT shield connectors (IO33 - IO26 and IO7 - IO0). We are using 13 external I/O pins of the shield connectors. Additional 3 external wires are required to connect from the FPGA board to external PCB and those are 5V0, GND and GND. There is also a possibility to get 3.3V on the external PCB by connecting 3V3 from FPGA board to external PCB 3V3 pin via external wire.
 
-IO0 for ultrasonic sensor module HC-SR04 signal "Trig" which is to trigger the ultrasonic sensor to start measuring the distance of the object.
-IO1 for ultrasonic sensor module HC-SR04 signal "Echo" which is to send received signal from the object to FPGA to calculate the range of the object.
-IO2 for Active buzzer module KY-012 signal "S" which is for sound signaling.
-IO3 for 10 LED bar array HDSP-4832 signal "Anode a" which is for third red LED.
-IO4 for 10 LED bar array HDSP-4832 signal "Anode b" which is for second red LED.
-IO5 for 10 LED bar array HDSP-4832 signal "Anode c" which is for first red LED.
-IO6 for 10 LED bar array HDSP-4832 signal "Anode d" which is for fourth yellow LED.
-IO7 for 10 LED bar array HDSP-4832 signal "Anode e" which is for third yellow LED.
-IO26 for 10 LED bar array HDSP-4832 signal "Anode f" which is for second yellow LED.
-IO27 for 10 LED bar array HDSP-4832 signal "Anode g" which is for first yellow LED.
-IO28 for 10 LED bar array HDSP-4832 signal "Anode h" which is for third green LED.
-IO29 for 10 LED bar array HDSP-4832 signal "Anode i" which is for second green LED.
-IO30 for 10 LED bar array HDSP-4832 signal "Anode j" which is for first green LED.
-IO31 is not used.
-IO32 is not used.
-IO33 is not used.
+IO0 for ultrasonic sensor module HC-SR04 signal "Trig" which is to trigger the ultrasonic sensor to start measuring the distance of the object.  
+IO1 for ultrasonic sensor module HC-SR04 signal "Echo" which is to send received signal from the object to FPGA to calculate the range of the object.  
+IO2 for Active buzzer module KY-012 signal "S" which is for sound signaling.  
+IO3 for 10 LED bar array HDSP-4832 signal "Anode a" which is for third red LED.  
+IO4 for 10 LED bar array HDSP-4832 signal "Anode b" which is for second red LED.  
+IO5 for 10 LED bar array HDSP-4832 signal "Anode c" which is for first red LED.  
+IO6 for 10 LED bar array HDSP-4832 signal "Anode d" which is for fourth yellow LED.  
+IO7 for 10 LED bar array HDSP-4832 signal "Anode e" which is for third yellow LED.  
+IO26 for 10 LED bar array HDSP-4832 signal "Anode f" which is for second yellow LED.  
+IO27 for 10 LED bar array HDSP-4832 signal "Anode g" which is for first yellow LED.  
+IO28 for 10 LED bar array HDSP-4832 signal "Anode h" which is for third green LED.  
+IO29 for 10 LED bar array HDSP-4832 signal "Anode i" which is for second green LED.  
+IO30 for 10 LED bar array HDSP-4832 signal "Anode j" which is for first green LED.  
+IO31 is not used.  
+IO32 is not used.  
+IO33 is not used.  
 
 
 ### **Bill of materials for the external PCB**
