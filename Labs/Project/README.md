@@ -7,7 +7,7 @@
 Francisca Campos, Henri Oru, Taavi Salum, Ana Sampaio, Ugur Erdem Yurt.
 
 
-## **https://github.com/TaaviSalum/Digital-electronics-1/tree/main/Labs/Project**
+**https://github.com/TaaviSalum/Digital-electronics-1/tree/main/Labs/Project**
 
 
 ## **Project objectives**
@@ -70,7 +70,7 @@ J2 | 5-146254-8 | TE Connectivity | Header & Wire Housing, Through-hole, Pitch -
 
 
 ### **Arty A7-35T from TOP side**
-![Arty A7-35T](https://github.com/TaaviSalum/Digital-electronics-1/blob/main/Labs/Project/Pictures/Arty_A7-35T.jpeg)
+![Arty A7-35T](https://github.com/TaaviSalum/Digital-electronics-1/blob/main/Labs/Project/Pictures/Arty_A7-35T.jpg)
 
 ### **External PCB Schematic**
 ![External PCB Schemati](https://github.com/TaaviSalum/Digital-electronics-1/blob/main/Labs/Project/Pictures/External_PCB_Schematic.png)
@@ -126,7 +126,7 @@ J2 | 5-146254-8 | TE Connectivity | Header & Wire Housing, Through-hole, Pitch -
 ![TOP design simulation](https://github.com/TaaviSalum/Digital-electronics-1/blob/main/Labs/Project/Pictures/Top_designr_simulation.png)
 
 ### **Block diagram of final application**
-![TBlock diagram of final application](https://github.com/TaaviSalum/Digital-electronics-1/blob/main/Labs/Project/Pictures/Final_block_diagram.png)
+![Block diagram of final application](https://github.com/TaaviSalum/Digital-electronics-1/blob/main/Labs/Project/Pictures/Final_block_diagram.png)
 
 
 
