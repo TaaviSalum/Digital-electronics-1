@@ -11,11 +11,11 @@ Francisca Campos, Henri Oru, Taavi Salum, Ana Sampaio, Ugur Erdem Yurt.
 
 
 ## **Project objectives**
-Project objective is to make parking assistant using HC-SR04 ultrasonic sensor, using PWM for sound signaling and LED bargraph for visual signaling.
+Project objective is to make parking assistant using HC-SR04 ultrasonic sensor, using PWM for sound signaling and LED bargraph for visual signaling.  
 This parking assistant is made for close quarters meaning that it will start detecting the range of object from 1 meter.
-Once the object gets closer to the ultrasonic sensor the sound signaling system will start beeping faster and faster and more LEDs will turn on.
-We have total of 10 LEDs: 3 green ones, 4 yellow ones and 3 red ones.
-If the object is far then one green LED will turn on and once the object gets closer then more LEDs will turn on and finally once the object is really close all of the LEDs will be turned on.
+Once the object gets closer to the ultrasonic sensor the sound signaling system will start beeping faster and faster and more LEDs will turn on.  
+We have total of 10 LEDs: 3 green ones, 4 yellow ones and 3 red ones.  
+If the object is far then one green LED will turn on and once the object gets closer then more LEDs will turn on and finally once the object is really close all of the LEDs will be turned on.  
 Green LEDs show that the object is still far. Yellow LEDs show that the object is in midrange. Red LEDs show that the object is really close to the ultrasonic sensor.
 
 
@@ -28,8 +28,7 @@ Green LEDs show that the object is still far. Yellow LEDs show that the object i
 
 ------------------------------------------------------------------------
 ## **Hardware description**
-For FPGA board we are using Arty A7-35T because it has enough external ports for us to use. We also have external 2 layer PCB which we use. 
-It connects straight on top of Arduino/chipKIT shield connectors (IO33 - IO26 and IO7 - IO0). We are using 13 external I/O pins of the shield connectors. Additional 3 external wires are required to connect from the FPGA board to external PCB and those are 5V0, GND and GND. There is also a possibility to get 3.3V on the external PCB by connecting 3V3 from FPGA board to external PCB 3V3 pin via external wire.
+For FPGA board we are using Arty A7-35T because it has enough external ports for us to use. We also have external 2 layer PCB which we use. It connects straight on top of Arduino/chipKIT shield connectors (IO33 - IO26 and IO7 - IO0). We are using 13 external I/O pins of the shield connectors. Additional 3 external wires are required to connect from the FPGA board to external PCB and those are 5V0, GND and GND. There is also a possibility to get 3.3V on the external PCB by connecting 3V3 from FPGA board to external PCB 3V3 pin via external wire.
 
 IO0 for ultrasonic sensor module HC-SR04 signal "Trig" which is to trigger the ultrasonic sensor to start measuring the distance of the object.  
 IO1 for ultrasonic sensor module HC-SR04 signal "Echo" which is to send received signal from the object to FPGA to calculate the range of the object.  
