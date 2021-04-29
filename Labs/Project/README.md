@@ -77,6 +77,8 @@ J2 | 5-146254-8 | TE Connectivity | Header & Wire Housing, Through-hole, Pitch -
 ### **External PCB 3D model from top side**
 ![External PCB 3D model from top side](https://github.com/TaaviSalum/Digital-electronics-1/blob/main/Labs/Project/Pictures/External_PCB_3D_TOP.png)
 
+!!!Small disclaimer: the actual colours of the U3 (HDSP-4832 / LED bar) is different than in the picture because we couldn't find the correct 3D model. Starting from the bottom the first three LEDs are green, then four yellow LEDs and then three red LEDs!!!
+
 ### **External PCB 3D model from bottom side**
 ![External PCB 3D model from bottom side](https://github.com/TaaviSalum/Digital-electronics-1/blob/main/Labs/Project/Pictures/External_PCB_3D_BOT.png)
 
@@ -88,7 +90,7 @@ J2 | 5-146254-8 | TE Connectivity | Header & Wire Housing, Through-hole, Pitch -
 ## **VHDL modules description and simulations**
 
 ### **LED_decoder module description**
-
+LED_decoder module is made out of 1 input and 10 outputs. The input is a four bit signal which controls the 10 outputs which are different coloured LEDs. The signal for the input comes directly from the top design. Inputs "0000", "1011", "1100", "1101", "1110" and "1111" turn all of the LEDs off because our top design has 10 different levels and those levels are between values "0001" and "1010". The higher the value goes the more LEDs will turn on. At input value of "0001" only 1 LED will be turned on (which is green) and at the input value of "1010" all of the LEDs will be turned on.
 
 
 ### **LED_decoder simulation**
