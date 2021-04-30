@@ -161,13 +161,16 @@ LED_decoder module is made out of 1 input and 10 outputs. The input is a four bi
 
 ------------------------------------------------------------------------
 ## **References**
-1. 
-2. 
-3. 
+1. https://docs.broadcom.com/doc/AV02-1798EN
+2. https://github.com/tomas-fryza/Digital-electronics-1/tree/master/Labs/05-counter
+3. https://arduinomodules.info/ky-012-active-buzzer-module/
 4. 
 5. 
-
-
+6. 
+7. 
+8. 
+9. 
+10. 
 
 
 
