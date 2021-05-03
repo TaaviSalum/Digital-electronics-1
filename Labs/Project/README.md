@@ -12,16 +12,18 @@ Francisca Campos, Henri Oru, Taavi Salum, Ana Sampaio, Ugur Erdem Yurt.
 
 ## **Project objectives**
 Project objective is to make parking assistant using HC-SR04 ultrasonic sensor, using PWM for sound signaling and LED bargraph for visual signaling.  
+
 This parking assistant is made for close quarters meaning that it will start detecting the range of object from 1 meter.
 Once the object gets closer to the ultrasonic sensor the sound signaling system will start beeping faster and faster and more LEDs will turn on.  
-We have total of 10 LEDs: 3 green ones, 4 yellow ones and 3 red ones.  
-If the object is far then one green LED will turn on and once the object gets closer then more LEDs will turn on and finally once the object is really close all of the LEDs will be turned on.  
-Green LEDs show that the object is still far. Yellow LEDs show that the object is in midrange. Red LEDs show that the object is really close to the ultrasonic sensor.
 
+We have total of 10 LEDs: 3 green ones, 4 yellow ones and 3 red ones. If the object is far then one green LED will turn on and once the object gets closer then more LEDs will turn on and finally once the object is really close all of the LEDs will be turned on.  
+
+Green LEDs show that the object is still far. Yellow LEDs show that the object is in midrange. Red LEDs show that the object is really close to the ultrasonic sensor.
 
 
 ### **Flowchart of the project**
 ![Flowchart](https://github.com/TaaviSalum/Digital-electronics-1/blob/main/Labs/Project/Pictures/Flowchart.png)
+
 
 
 
