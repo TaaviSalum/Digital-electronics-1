@@ -108,9 +108,13 @@ LED_decoder module is made out of 1 input and 10 outputs. The input is a four bi
 ### **Ultrasonic sensor module description**
 The ultrasonic module contains a controller for the HC-SR04 Sensor.  
 It generates several ticks to synchronize the sensor with the system clock. A microsecond tick has been generated in order to count that the trigger is active for about 15 us. In addition, the 1ms and 60 ms ticks have been created so that the trigger can be generated every 60 ms as indicated in the datasheet timing specification.   
+
 Two processes have been created, one to send the trigger and the other to receive the echo, which are the signals received and sent by the sensor respectively.  
+
 In the process that sends the trigger, when it detects that 60 ms have passed, the trigger count is activated and the trigger is high for 15 us.  
+
 In the receiving process, the echo counts how long the echo is at high level. As to know the distance it is necessary to count the time at high level and divide it by 58 to obtain the cm, some ranges have been created with the desired distances. So, if the sensor is a time less than or equal to 58 * 10cm = 580, the distance range is 0, the next 58 * 2 * 10 = 1160 and so on.  
+
 It has been thought that the range of distances covers from 10 cm to 1 m since it is a parking assistant, so these distances are considered as the most suitable for parking.
 
 
