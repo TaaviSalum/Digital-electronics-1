@@ -100,7 +100,9 @@ The signal for the input comes directly from the top design. Inputs "0000", "101
 
 
 ### **PWM module description**
+PWM module is made out of only one input and no outputs because it doesn’t need to give feedback, its only purpose is to make sound according to the signal received. The input is a 4bit signal which gives 10 output signals to the buzzer to make a sound according to the signal.  
 
+The signals are activated the same as LED_decoder, from ‘0001’ to ‘1010’. When one signal is activated, lets take the signal ‘1001’ (9) for example, the module will do 9 continuous beeps divided between 1-100, after each beep is a quick reset and it moves onto another beep. After that, when it has gotten to 100, it starts again at 0 and also resets itself after which it starts again with counting from 1 according to the signal value it has. The higher the value in the input is, the more intensely the PWM module will beep.
 
 
 ### **PWM simulation**
