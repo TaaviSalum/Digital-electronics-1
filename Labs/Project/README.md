@@ -115,7 +115,7 @@ It has been thought that the range of distances covers from 10 cm to 1 m since i
 
 
 ### **Ultrasonic sensor simulation**
-![Ultrasonic sensor simulation](https://github.com/TaaviSalum/Digital-electronics-1/blob/main/Labs/Project/Pictures/Ultrasonic_sensor_simulation.png)
+![Ultrasonic sensor simulation](https://github.com/TaaviSalum/Digital-electronics-1/blob/main/Labs/Project/Pictures/Ultrasonic_sensor_simulation.PNG)
 
 
 
