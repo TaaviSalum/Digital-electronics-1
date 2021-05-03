@@ -90,7 +90,9 @@ Small disclaimer: the actual colours of the U3 (HDSP-4832 / LED bar) is differen
 ## **VHDL modules description and simulations**
 
 ### **LED_decoder module description**
-LED_decoder module is made out of 1 input and 10 outputs. The input is a four bit signal which controls the 10 outputs which are different coloured LEDs. The signal for the input comes directly from the top design. Inputs "0000", "1011", "1100", "1101", "1110" and "1111" turn all of the LEDs off because our top design has 10 different levels and those levels are between values "0001" and "1010". The higher the value goes the more LEDs will turn on. At input value of "0001" only 1 LED will be turned on (which is green) and at the input value of "1010" all of the LEDs will be turned on.
+LED_decoder module is made out of 1 input and 10 outputs. The input is a four bit signal which controls the 10 outputs which are different coloured LEDs.  
+
+The signal for the input comes directly from the top design. Inputs "0000", "1011", "1100", "1101", "1110" and "1111" turn all of the LEDs off because our top design has 10 different levels and those levels are between values "0001" and "1010". The higher the value goes the more LEDs will turn on. At input value of "0001" only 1 LED will be turned on (which is green) and at the input value of "1010" all of the LEDs will be turned on.
 
 
 ### **LED_decoder simulation**
@@ -106,7 +108,8 @@ LED_decoder module is made out of 1 input and 10 outputs. The input is a four bi
 
 
 ### **Ultrasonic sensor module description**
-The ultrasonic module contains a controller for the HC-SR04 Sensor.  
+The ultrasonic module contains a controller for the HC-SR04 Sensor. 
+
 It generates several ticks to synchronize the sensor with the system clock. A microsecond tick has been generated in order to count that the trigger is active for about 15 us. In addition, the 1ms and 60 ms ticks have been created so that the trigger can be generated every 60 ms as indicated in the datasheet timing specification.   
 
 Two processes have been created, one to send the trigger and the other to receive the echo, which are the signals received and sent by the sensor respectively.  
