@@ -4,7 +4,7 @@
 
 ------------------------------------------------------------------------
 ## **Team members**
-Francisca Campos, Henri Oru, Taavi Salum, Ana Sampaio, Ugur Erdem Yurt.
+Taavi Salum, Henri Oru, Ana Sampaio, Francisca Campos, Ugur Erdem Yurt.
 
 
 **https://github.com/TaaviSalum/Digital-electronics-1/tree/main/Labs/Project**
@@ -96,6 +96,13 @@ LED_decoder module is made out of 1 input and 10 outputs. The input is a four bi
 
 The signal for the input comes directly from the top design. Inputs "0000", "1011", "1100", "1101", "1110" and "1111" turn all of the LEDs off because our top design has 10 different levels and those levels are between values "0001" and "1010". The higher the value goes the more LEDs will turn on. At input value of "0001" only 1 LED will be turned on (which is green) and at the input value of "1010" all of the LEDs will be turned on.
 
+### **Links to source file**
+https://github.com/TaaviSalum/Digital-electronics-1/blob/main/Labs/Project/Top_Design_Ultrasonic_Sensor_Project/Top_Design_Ultrasonic_Sensor_Project.srcs/sources_1/new/LED_decoder.vhd
+
+
+### **Links to test testbench**
+https://github.com/TaaviSalum/Digital-electronics-1/blob/main/Labs/Project/Top_Design_Ultrasonic_Sensor_Project/Top_Design_Ultrasonic_Sensor_Project.srcs/sim_1/new/tb_LED_decoder.vhd
+
 
 ### **LED_decoder simulation**
 ![LED_decoder simulation](https://github.com/TaaviSalum/Digital-electronics-1/blob/main/Labs/Project/Pictures/LED_decoder_simulation.png)
@@ -105,6 +112,61 @@ The signal for the input comes directly from the top design. Inputs "0000", "101
 PWM module is made out of only one input and no outputs because it doesn’t need to give feedback, its only purpose is to make sound according to the signal received. The input is a 4bit signal which gives 10 output signals to the buzzer to make a sound according to the signal.  
 
 The signals are activated the same as LED_decoder, from ‘0001’ to ‘1010’. When one signal is activated, lets take the signal ‘1001’ (9) for example, the module will do 9 continuous beeps divided between 1-100, after each beep is a quick reset and it moves onto another beep. After that, when it has gotten to 100, it starts again at 0 and also resets itself after which it starts again with counting from 1 according to the signal value it has. The higher the value in the input is, the more intensely the PWM module will beep.
+
+### **Links to source files**
+https://github.com/TaaviSalum/Digital-electronics-1/blob/main/Labs/Project/Top_Design_Ultrasonic_Sensor_Project/Top_Design_Ultrasonic_Sensor_Project.srcs/sources_1/new/clock_enable.vhd  
+
+https://github.com/TaaviSalum/Digital-electronics-1/blob/main/Labs/Project/Top_Design_Ultrasonic_Sensor_Project/Top_Design_Ultrasonic_Sensor_Project.srcs/sources_1/new/cnt_up_down.vhd  
+
+https://github.com/TaaviSalum/Digital-electronics-1/blob/main/Labs/Project/Top_Design_Ultrasonic_Sensor_Project/Top_Design_Ultrasonic_Sensor_Project.srcs/sources_1/new/PWM_1.vhd  
+
+https://github.com/TaaviSalum/Digital-electronics-1/blob/main/Labs/Project/Top_Design_Ultrasonic_Sensor_Project/Top_Design_Ultrasonic_Sensor_Project.srcs/sources_1/new/PWM_2.vhd  
+
+https://github.com/TaaviSalum/Digital-electronics-1/blob/main/Labs/Project/Top_Design_Ultrasonic_Sensor_Project/Top_Design_Ultrasonic_Sensor_Project.srcs/sources_1/new/PWM_3.vhd  
+
+https://github.com/TaaviSalum/Digital-electronics-1/blob/main/Labs/Project/Top_Design_Ultrasonic_Sensor_Project/Top_Design_Ultrasonic_Sensor_Project.srcs/sources_1/new/PWM_4.vhd  
+
+https://github.com/TaaviSalum/Digital-electronics-1/blob/main/Labs/Project/Top_Design_Ultrasonic_Sensor_Project/Top_Design_Ultrasonic_Sensor_Project.srcs/sources_1/new/PWM_5.vhd  
+
+https://github.com/TaaviSalum/Digital-electronics-1/blob/main/Labs/Project/Top_Design_Ultrasonic_Sensor_Project/Top_Design_Ultrasonic_Sensor_Project.srcs/sources_1/new/PWM_6.vhd  
+
+https://github.com/TaaviSalum/Digital-electronics-1/blob/main/Labs/Project/Top_Design_Ultrasonic_Sensor_Project/Top_Design_Ultrasonic_Sensor_Project.srcs/sources_1/new/PWM_7.vhd  
+
+https://github.com/TaaviSalum/Digital-electronics-1/blob/main/Labs/Project/Top_Design_Ultrasonic_Sensor_Project/Top_Design_Ultrasonic_Sensor_Project.srcs/sources_1/new/PWM_8.vhd  
+
+https://github.com/TaaviSalum/Digital-electronics-1/blob/main/Labs/Project/Top_Design_Ultrasonic_Sensor_Project/Top_Design_Ultrasonic_Sensor_Project.srcs/sources_1/new/PWM_9.vhd  
+
+https://github.com/TaaviSalum/Digital-electronics-1/blob/main/Labs/Project/Top_Design_Ultrasonic_Sensor_Project/Top_Design_Ultrasonic_Sensor_Project.srcs/sources_1/new/PWM_10.vhd  
+
+https://github.com/TaaviSalum/Digital-electronics-1/blob/main/Labs/Project/Top_Design_Ultrasonic_Sensor_Project/Top_Design_Ultrasonic_Sensor_Project.srcs/sources_1/new/PWM_KY012.vhd  
+
+
+### **Links to test testbenches**
+https://github.com/TaaviSalum/Digital-electronics-1/blob/main/Labs/Project/Top_Design_Ultrasonic_Sensor_Project/Top_Design_Ultrasonic_Sensor_Project.srcs/sim_1/new/tb_clock_enable.vhd  
+
+https://github.com/TaaviSalum/Digital-electronics-1/blob/main/Labs/Project/Top_Design_Ultrasonic_Sensor_Project/Top_Design_Ultrasonic_Sensor_Project.srcs/sim_1/new/tb_cnt_up_down.vhd  
+
+https://github.com/TaaviSalum/Digital-electronics-1/blob/main/Labs/Project/Top_Design_Ultrasonic_Sensor_Project/Top_Design_Ultrasonic_Sensor_Project.srcs/sim_1/new/tb_PWM_1.vhd  
+
+https://github.com/TaaviSalum/Digital-electronics-1/blob/main/Labs/Project/Top_Design_Ultrasonic_Sensor_Project/Top_Design_Ultrasonic_Sensor_Project.srcs/sim_1/new/tb_PWM_2.vhd  
+
+https://github.com/TaaviSalum/Digital-electronics-1/blob/main/Labs/Project/Top_Design_Ultrasonic_Sensor_Project/Top_Design_Ultrasonic_Sensor_Project.srcs/sim_1/new/tb_PWM_3.vhd  
+
+https://github.com/TaaviSalum/Digital-electronics-1/blob/main/Labs/Project/Top_Design_Ultrasonic_Sensor_Project/Top_Design_Ultrasonic_Sensor_Project.srcs/sim_1/new/tb_PWM_4.vhd  
+
+https://github.com/TaaviSalum/Digital-electronics-1/blob/main/Labs/Project/Top_Design_Ultrasonic_Sensor_Project/Top_Design_Ultrasonic_Sensor_Project.srcs/sim_1/new/tb_PWM_5.vhd  
+
+https://github.com/TaaviSalum/Digital-electronics-1/blob/main/Labs/Project/Top_Design_Ultrasonic_Sensor_Project/Top_Design_Ultrasonic_Sensor_Project.srcs/sim_1/new/tb_PWM_6.vhd  
+
+https://github.com/TaaviSalum/Digital-electronics-1/blob/main/Labs/Project/Top_Design_Ultrasonic_Sensor_Project/Top_Design_Ultrasonic_Sensor_Project.srcs/sim_1/new/tb_PWM_7.vhd  
+
+https://github.com/TaaviSalum/Digital-electronics-1/blob/main/Labs/Project/Top_Design_Ultrasonic_Sensor_Project/Top_Design_Ultrasonic_Sensor_Project.srcs/sim_1/new/tb_PWM_8.vhd  
+
+https://github.com/TaaviSalum/Digital-electronics-1/blob/main/Labs/Project/Top_Design_Ultrasonic_Sensor_Project/Top_Design_Ultrasonic_Sensor_Project.srcs/sim_1/new/tb_PWM_9.vhd  
+
+https://github.com/TaaviSalum/Digital-electronics-1/blob/main/Labs/Project/Top_Design_Ultrasonic_Sensor_Project/Top_Design_Ultrasonic_Sensor_Project.srcs/sim_1/new/tb_PWM_10.vhd  
+
+https://github.com/TaaviSalum/Digital-electronics-1/blob/main/Labs/Project/Top_Design_Ultrasonic_Sensor_Project/Top_Design_Ultrasonic_Sensor_Project.srcs/sim_1/new/tb_PWM_KY012.vhd  
 
 
 ### **PWM simulation**
@@ -125,6 +187,14 @@ In the receiving process, the echo counts how long the echo is at high level. As
 It has been thought that the range of distances covers from 10 cm to 1 m since it is a parking assistant, so these distances are considered as the most suitable for parking.
 
 
+### **Links to source file**
+https://github.com/TaaviSalum/Digital-electronics-1/blob/main/Labs/Project/Top_Design_Ultrasonic_Sensor_Project/Top_Design_Ultrasonic_Sensor_Project.srcs/sources_1/new/ultraSonic.vhd  
+
+
+### **Links to test testbench**
+https://github.com/TaaviSalum/Digital-electronics-1/blob/main/Labs/Project/Top_Design_Ultrasonic_Sensor_Project/Top_Design_Ultrasonic_Sensor_Project.srcs/sim_1/new/tb_ultraSonic.vhd  
+
+
 ### **Ultrasonic sensor simulation**
 ![Ultrasonic sensor simulation](https://github.com/TaaviSalum/Digital-electronics-1/blob/main/Labs/Project/Pictures/Ultrasonic_sensor_simulation.PNG)
 
@@ -141,6 +211,12 @@ TOP design for the whole project is made out of 3 outputs and 3 inputs. Outputs 
 When the Ultrasonic sensor reads a signal in its reading range with Ultrasonic sensor, it sends the signal to the Arty A7-35T development board. The development board then sends the signal forward to LED_decoder and PWM input. LED-s will turn on according to the given signal, same with the Buzzer. For example: If the Ultrasonic sensor detects the first range distance, which is ‘0001’, the Green1_o LED will turn on, the principle is the same with the Buzzer, if the first distance is detected it will give out the slowest “beeps” out of the ten settings it has. If the object is very close, Ultrasonic sensor will give out the ‘1010’ signal to LED_decoder and PWM, so all the LED-s will turn on and the Buzzer will go onto the fastest “beeping” setting.  
 
 
+### **Links to source file**
+https://github.com/TaaviSalum/Digital-electronics-1/blob/main/Labs/Project/Top_Design_Ultrasonic_Sensor_Project/Top_Design_Ultrasonic_Sensor_Project.srcs/sources_1/new/Top_design.vhd  
+
+
+### **Links to test testbench**
+https://github.com/TaaviSalum/Digital-electronics-1/blob/main/Labs/Project/Top_Design_Ultrasonic_Sensor_Project/Top_Design_Ultrasonic_Sensor_Project.srcs/sim_1/new/tb_top_design.vhd 
 
 
 
