@@ -96,22 +96,28 @@ LED_decoder module is made out of 1 input and 10 outputs. The input is a four bi
 
 The signal for the input comes directly from the top design. Inputs "0000", "1011", "1100", "1101", "1110" and "1111" turn all of the LEDs off because our top design has 10 different levels and those levels are between values "0001" and "1010". The higher the value goes the more LEDs will turn on. At input value of "0001" only 1 LED will be turned on (which is green) and at the input value of "1010" all of the LEDs will be turned on.
 
-### **Links to source file**
-https://github.com/TaaviSalum/Digital-electronics-1/blob/main/Labs/Project/Top_Design_Ultrasonic_Sensor_Project/Top_Design_Ultrasonic_Sensor_Project.srcs/sources_1/new/LED_decoder.vhd
-
-
-### **Links to test testbench**
-https://github.com/TaaviSalum/Digital-electronics-1/blob/main/Labs/Project/Top_Design_Ultrasonic_Sensor_Project/Top_Design_Ultrasonic_Sensor_Project.srcs/sim_1/new/tb_LED_decoder.vhd
-
 
 ### **LED_decoder simulation**
 ![LED_decoder simulation](https://github.com/TaaviSalum/Digital-electronics-1/blob/main/Labs/Project/Pictures/LED_decoder_simulation.png)
+
+
+### **Links to source file**
+https://github.com/TaaviSalum/Digital-electronics-1/blob/main/Labs/Project/Top_Design_Ultrasonic_Sensor_Project/Top_Design_Ultrasonic_Sensor_Project.srcs/sources_1/new/LED_decoder.vhd  
+
+
+### **Links to test testbench**
+https://github.com/TaaviSalum/Digital-electronics-1/blob/main/Labs/Project/Top_Design_Ultrasonic_Sensor_Project/Top_Design_Ultrasonic_Sensor_Project.srcs/sim_1/new/tb_LED_decoder.vhd  
 
 
 ### **PWM module description**
 PWM module is made out of only one input and no outputs because it doesn’t need to give feedback, its only purpose is to make sound according to the signal received. The input is a 4bit signal which gives 10 output signals to the buzzer to make a sound according to the signal.  
 
 The signals are activated the same as LED_decoder, from ‘0001’ to ‘1010’. When one signal is activated, lets take the signal ‘1001’ (9) for example, the module will do 9 continuous beeps divided between 1-100, after each beep is a quick reset and it moves onto another beep. After that, when it has gotten to 100, it starts again at 0 and also resets itself after which it starts again with counting from 1 according to the signal value it has. The higher the value in the input is, the more intensely the PWM module will beep.
+
+
+### **PWM simulation**
+![PWM simulation](https://github.com/TaaviSalum/Digital-electronics-1/blob/main/Labs/Project/Pictures/PWM_simulation.png)
+
 
 ### **Links to source files**
 https://github.com/TaaviSalum/Digital-electronics-1/blob/main/Labs/Project/Top_Design_Ultrasonic_Sensor_Project/Top_Design_Ultrasonic_Sensor_Project.srcs/sources_1/new/clock_enable.vhd  
@@ -169,9 +175,6 @@ https://github.com/TaaviSalum/Digital-electronics-1/blob/main/Labs/Project/Top_D
 https://github.com/TaaviSalum/Digital-electronics-1/blob/main/Labs/Project/Top_Design_Ultrasonic_Sensor_Project/Top_Design_Ultrasonic_Sensor_Project.srcs/sim_1/new/tb_PWM_KY012.vhd  
 
 
-### **PWM simulation**
-![PWM simulation](https://github.com/TaaviSalum/Digital-electronics-1/blob/main/Labs/Project/Pictures/PWM_simulation.png)
-
 
 ### **Ultrasonic sensor module description**
 The ultrasonic module contains a controller for the HC-SR04 Sensor. 
@@ -187,16 +190,16 @@ In the receiving process, the echo counts how long the echo is at high level. As
 It has been thought that the range of distances covers from 10 cm to 1 m since it is a parking assistant, so these distances are considered as the most suitable for parking.
 
 
+### **Ultrasonic sensor simulation**
+![Ultrasonic sensor simulation](https://github.com/TaaviSalum/Digital-electronics-1/blob/main/Labs/Project/Pictures/Ultrasonic_sensor_simulation.PNG)
+
+
 ### **Links to source file**
 https://github.com/TaaviSalum/Digital-electronics-1/blob/main/Labs/Project/Top_Design_Ultrasonic_Sensor_Project/Top_Design_Ultrasonic_Sensor_Project.srcs/sources_1/new/ultraSonic.vhd  
 
 
 ### **Links to test testbench**
 https://github.com/TaaviSalum/Digital-electronics-1/blob/main/Labs/Project/Top_Design_Ultrasonic_Sensor_Project/Top_Design_Ultrasonic_Sensor_Project.srcs/sim_1/new/tb_ultraSonic.vhd  
-
-
-### **Ultrasonic sensor simulation**
-![Ultrasonic sensor simulation](https://github.com/TaaviSalum/Digital-electronics-1/blob/main/Labs/Project/Pictures/Ultrasonic_sensor_simulation.PNG)
 
 
 
@@ -217,6 +220,8 @@ https://github.com/TaaviSalum/Digital-electronics-1/blob/main/Labs/Project/Top_D
 
 ### **Links to test testbench**
 https://github.com/TaaviSalum/Digital-electronics-1/blob/main/Labs/Project/Top_Design_Ultrasonic_Sensor_Project/Top_Design_Ultrasonic_Sensor_Project.srcs/sim_1/new/tb_top_design.vhd 
+
+
 
 
 
