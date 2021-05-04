@@ -101,11 +101,11 @@ The signal for the input comes directly from the top design. Inputs "0000", "101
 ![LED_decoder simulation](https://github.com/TaaviSalum/Digital-electronics-1/blob/main/Labs/Project/Pictures/LED_decoder_simulation.png)
 
 
-### **Links to source file**
+### **Link to source file**
 https://github.com/TaaviSalum/Digital-electronics-1/blob/main/Labs/Project/Top_Design_Ultrasonic_Sensor_Project/Top_Design_Ultrasonic_Sensor_Project.srcs/sources_1/new/LED_decoder.vhd  
 
 
-### **Links to test testbench**
+### **Link to test testbench**
 https://github.com/TaaviSalum/Digital-electronics-1/blob/main/Labs/Project/Top_Design_Ultrasonic_Sensor_Project/Top_Design_Ultrasonic_Sensor_Project.srcs/sim_1/new/tb_LED_decoder.vhd  
 
 
@@ -214,11 +214,11 @@ TOP design for the whole project is made out of 3 outputs and 3 inputs. Outputs 
 When the Ultrasonic sensor reads a signal in its reading range with Ultrasonic sensor, it sends the signal to the Arty A7-35T development board. The development board then sends the signal forward to LED_decoder and PWM input. LED-s will turn on according to the given signal, same with the Buzzer. For example: If the Ultrasonic sensor detects the first range distance, which is ‘0001’, the Green1_o LED will turn on, the principle is the same with the Buzzer, if the first distance is detected it will give out the slowest “beeps” out of the ten settings it has. If the object is very close, Ultrasonic sensor will give out the ‘1010’ signal to LED_decoder and PWM, so all the LED-s will turn on and the Buzzer will go onto the fastest “beeping” setting.  
 
 
-### **Links to source file**
+### **Link to source file**
 https://github.com/TaaviSalum/Digital-electronics-1/blob/main/Labs/Project/Top_Design_Ultrasonic_Sensor_Project/Top_Design_Ultrasonic_Sensor_Project.srcs/sources_1/new/Top_design.vhd  
 
 
-### **Links to test testbench**
+### **Link to test testbench**
 https://github.com/TaaviSalum/Digital-electronics-1/blob/main/Labs/Project/Top_Design_Ultrasonic_Sensor_Project/Top_Design_Ultrasonic_Sensor_Project.srcs/sim_1/new/tb_top_design.vhd 
 
 
