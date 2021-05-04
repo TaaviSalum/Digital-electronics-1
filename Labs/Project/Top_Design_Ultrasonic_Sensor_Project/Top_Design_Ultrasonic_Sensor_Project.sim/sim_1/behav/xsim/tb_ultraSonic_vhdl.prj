@@ -1,0 +1,7 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../Top_Design_Ultrasonic_Sensor_Project.srcs/sources_1/new/ultraSonic.vhd" \
+"../../../../Top_Design_Ultrasonic_Sensor_Project.srcs/sim_1/new/tb_ultraSonic.vhd" \
+
+# Do not sort compile order
+nosort

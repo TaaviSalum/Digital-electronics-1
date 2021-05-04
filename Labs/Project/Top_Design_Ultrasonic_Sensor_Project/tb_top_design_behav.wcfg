@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_top_design_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="tb_top_design" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="2844001fs"></ZoomEndTime>
+      <Cursor1Time time="205000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="296"></NameColumnWidth>
+      <ValueColumnWidth column_width="143"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="59" />
+   <wvobject fp_name="/tb_top_design/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_design/btn[0]" type="logic">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">[0]</obj_property>
+      <obj_property name="ObjectShortName">[0]</obj_property>
+      <obj_property name="label">reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_design/sw[0]" type="logic">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">[0]</obj_property>
+      <obj_property name="ObjectShortName">[0]</obj_property>
+      <obj_property name="label">OnOff</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_design/ck_io[30]" type="logic">
+      <obj_property name="ElementShortName">[30]</obj_property>
+      <obj_property name="ObjectShortName">[30]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_design/ck_io[29]" type="logic">
+      <obj_property name="ElementShortName">[29]</obj_property>
+      <obj_property name="ObjectShortName">[29]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_design/ck_io[28]" type="logic">
+      <obj_property name="ElementShortName">[28]</obj_property>
+      <obj_property name="ObjectShortName">[28]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_design/ck_io[26]" type="logic">
+      <obj_property name="ElementShortName">[26]</obj_property>
+      <obj_property name="ObjectShortName">[26]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_design/ck_io[27]" type="logic">
+      <obj_property name="ElementShortName">[27]</obj_property>
+      <obj_property name="ObjectShortName">[27]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_design/ck_io[7]" type="logic">
+      <obj_property name="ElementShortName">[7]</obj_property>
+      <obj_property name="ObjectShortName">[7]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_design/ck_io[6]" type="logic">
+      <obj_property name="ElementShortName">[6]</obj_property>
+      <obj_property name="ObjectShortName">[6]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_design/ck_io[5]" type="logic">
+      <obj_property name="ElementShortName">[5]</obj_property>
+      <obj_property name="ObjectShortName">[5]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_design/ck_io[4]" type="logic">
+      <obj_property name="ElementShortName">[4]</obj_property>
+      <obj_property name="ObjectShortName">[4]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_design/ck_io[3]" type="logic">
+      <obj_property name="ElementShortName">[3]</obj_property>
+      <obj_property name="ObjectShortName">[3]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_design/ck_io[2]" type="logic">
+      <obj_property name="ElementShortName">[2]</obj_property>
+      <obj_property name="ObjectShortName">[2]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_design/ck_io[1]" type="logic">
+      <obj_property name="ElementShortName">[1]</obj_property>
+      <obj_property name="ObjectShortName">[1]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_design/ck_io[0]" type="logic">
+      <obj_property name="ElementShortName">[0]</obj_property>
+      <obj_property name="ObjectShortName">[0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_design/uut_top_design/Sensor/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_design/uut_top_design/Sensor/reset" type="logic">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_design/uut_top_design/Sensor/act" type="logic">
+      <obj_property name="ElementShortName">act</obj_property>
+      <obj_property name="ObjectShortName">act</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_design/uut_top_design/Sensor/echo" type="logic">
+      <obj_property name="ElementShortName">echo</obj_property>
+      <obj_property name="ObjectShortName">echo</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_design/uut_top_design/Sensor/trigger" type="logic">
+      <obj_property name="ElementShortName">trigger</obj_property>
+      <obj_property name="ObjectShortName">trigger</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_design/uut_top_design/Sensor/distanceRange" type="array">
+      <obj_property name="ElementShortName">distanceRange[3:0]</obj_property>
+      <obj_property name="ObjectShortName">distanceRange[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_design/uut_top_design/Sensor/tic_1u" type="logic">
+      <obj_property name="ElementShortName">tic_1u</obj_property>
+      <obj_property name="ObjectShortName">tic_1u</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_design/uut_top_design/Sensor/cnt_1u" type="array">
+      <obj_property name="ElementShortName">cnt_1u[6:0]</obj_property>
+      <obj_property name="ObjectShortName">cnt_1u[6:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_design/uut_top_design/Sensor/tic_1m" type="logic">
+      <obj_property name="ElementShortName">tic_1m</obj_property>
+      <obj_property name="ObjectShortName">tic_1m</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_design/uut_top_design/Sensor/cnt_1m" type="array">
+      <obj_property name="ElementShortName">cnt_1m[9:0]</obj_property>
+      <obj_property name="ObjectShortName">cnt_1m[9:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_design/uut_top_design/Sensor/tic_60m" type="logic">
+      <obj_property name="ElementShortName">tic_60m</obj_property>
+      <obj_property name="ObjectShortName">tic_60m</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_design/uut_top_design/Sensor/cnt_60m" type="array">
+      <obj_property name="ElementShortName">cnt_60m[5:0]</obj_property>
+      <obj_property name="ObjectShortName">cnt_60m[5:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_design/uut_top_design/Sensor/echo_value" type="array">
+      <obj_property name="ElementShortName">echo_value[12:0]</obj_property>
+      <obj_property name="ObjectShortName">echo_value[12:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_design/uut_top_design/Sensor/cnt_trig" type="array">
+      <obj_property name="ElementShortName">cnt_trig[4:0]</obj_property>
+      <obj_property name="ObjectShortName">cnt_trig[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_design/uut_top_design/Sensor/cnt_echo" type="array">
+      <obj_property name="ElementShortName">cnt_echo[12:0]</obj_property>
+      <obj_property name="ObjectShortName">cnt_echo[12:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_design/uut_top_design/Sensor/DIV_1u" type="other">
+      <obj_property name="ElementShortName">DIV_1u</obj_property>
+      <obj_property name="ObjectShortName">DIV_1u</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_design/uut_top_design/Sensor/DIV_1m" type="other">
+      <obj_property name="ElementShortName">DIV_1m</obj_property>
+      <obj_property name="ObjectShortName">DIV_1m</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_design/uut_top_design/Sensor/DIV_60m" type="other">
+      <obj_property name="ElementShortName">DIV_60m</obj_property>
+      <obj_property name="ObjectShortName">DIV_60m</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_design/uut_top_design/LED_decoder/DecoderInput_i" type="array">
+      <obj_property name="ElementShortName">DecoderInput_i[3:0]</obj_property>
+      <obj_property name="ObjectShortName">DecoderInput_i[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_design/uut_top_design/LED_decoder/Green1_o" type="logic">
+      <obj_property name="ElementShortName">Green1_o</obj_property>
+      <obj_property name="ObjectShortName">Green1_o</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_design/uut_top_design/LED_decoder/Green2_o" type="logic">
+      <obj_property name="ElementShortName">Green2_o</obj_property>
+      <obj_property name="ObjectShortName">Green2_o</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_design/uut_top_design/LED_decoder/Green3_o" type="logic">
+      <obj_property name="ElementShortName">Green3_o</obj_property>
+      <obj_property name="ObjectShortName">Green3_o</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_design/uut_top_design/LED_decoder/Yellow1_o" type="logic">
+      <obj_property name="ElementShortName">Yellow1_o</obj_property>
+      <obj_property name="ObjectShortName">Yellow1_o</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_design/uut_top_design/LED_decoder/Yellow2_o" type="logic">
+      <obj_property name="ElementShortName">Yellow2_o</obj_property>
+      <obj_property name="ObjectShortName">Yellow2_o</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_design/uut_top_design/LED_decoder/Yellow3_o" type="logic">
+      <obj_property name="ElementShortName">Yellow3_o</obj_property>
+      <obj_property name="ObjectShortName">Yellow3_o</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_design/uut_top_design/LED_decoder/Yellow4_o" type="logic">
+      <obj_property name="ElementShortName">Yellow4_o</obj_property>
+      <obj_property name="ObjectShortName">Yellow4_o</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_design/uut_top_design/LED_decoder/Red1_o" type="logic">
+      <obj_property name="ElementShortName">Red1_o</obj_property>
+      <obj_property name="ObjectShortName">Red1_o</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_design/uut_top_design/LED_decoder/Red2_o" type="logic">
+      <obj_property name="ElementShortName">Red2_o</obj_property>
+      <obj_property name="ObjectShortName">Red2_o</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_design/uut_top_design/LED_decoder/Red3_o" type="logic">
+      <obj_property name="ElementShortName">Red3_o</obj_property>
+      <obj_property name="ObjectShortName">Red3_o</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_design/uut_top_design/PWM_KY012/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_design/uut_top_design/PWM_KY012/reset" type="logic">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_design/uut_top_design/PWM_KY012/PWMInput_i" type="array">
+      <obj_property name="ElementShortName">PWMInput_i[3:0]</obj_property>
+      <obj_property name="ObjectShortName">PWMInput_i[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_design/uut_top_design/PWM_KY012/PWMOutput_o" type="logic">
+      <obj_property name="ElementShortName">PWMOutput_o</obj_property>
+      <obj_property name="ObjectShortName">PWMOutput_o</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_design/uut_top_design/PWM_KY012/s_PWM1_en" type="logic">
+      <obj_property name="ElementShortName">s_PWM1_en</obj_property>
+      <obj_property name="ObjectShortName">s_PWM1_en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_design/uut_top_design/PWM_KY012/s_PWM2_en" type="logic">
+      <obj_property name="ElementShortName">s_PWM2_en</obj_property>
+      <obj_property name="ObjectShortName">s_PWM2_en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_design/uut_top_design/PWM_KY012/s_PWM3_en" type="logic">
+      <obj_property name="ElementShortName">s_PWM3_en</obj_property>
+      <obj_property name="ObjectShortName">s_PWM3_en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_design/uut_top_design/PWM_KY012/s_PWM4_en" type="logic">
+      <obj_property name="ElementShortName">s_PWM4_en</obj_property>
+      <obj_property name="ObjectShortName">s_PWM4_en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_design/uut_top_design/PWM_KY012/s_PWM5_en" type="logic">
+      <obj_property name="ElementShortName">s_PWM5_en</obj_property>
+      <obj_property name="ObjectShortName">s_PWM5_en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_design/uut_top_design/PWM_KY012/s_PWM6_en" type="logic">
+      <obj_property name="ElementShortName">s_PWM6_en</obj_property>
+      <obj_property name="ObjectShortName">s_PWM6_en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_design/uut_top_design/PWM_KY012/s_PWM7_en" type="logic">
+      <obj_property name="ElementShortName">s_PWM7_en</obj_property>
+      <obj_property name="ObjectShortName">s_PWM7_en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_design/uut_top_design/PWM_KY012/s_PWM8_en" type="logic">
+      <obj_property name="ElementShortName">s_PWM8_en</obj_property>
+      <obj_property name="ObjectShortName">s_PWM8_en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_design/uut_top_design/PWM_KY012/s_PWM9_en" type="logic">
+      <obj_property name="ElementShortName">s_PWM9_en</obj_property>
+      <obj_property name="ObjectShortName">s_PWM9_en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_design/uut_top_design/PWM_KY012/s_PWM10_en" type="logic">
+      <obj_property name="ElementShortName">s_PWM10_en</obj_property>
+      <obj_property name="ObjectShortName">s_PWM10_en</obj_property>
+   </wvobject>
+</wave_config>

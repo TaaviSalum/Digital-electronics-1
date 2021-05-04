@@ -1,0 +1,21 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../Top_Design_Ultrasonic_Sensor_Project.srcs/sources_1/new/LED_decoder.vhd" \
+"../../../../Top_Design_Ultrasonic_Sensor_Project.srcs/sources_1/new/clock_enable.vhd" \
+"../../../../Top_Design_Ultrasonic_Sensor_Project.srcs/sources_1/new/cnt_up_down.vhd" \
+"../../../../Top_Design_Ultrasonic_Sensor_Project.srcs/sources_1/new/PWM_1.vhd" \
+"../../../../Top_Design_Ultrasonic_Sensor_Project.srcs/sources_1/new/PWM_10.vhd" \
+"../../../../Top_Design_Ultrasonic_Sensor_Project.srcs/sources_1/new/PWM_2.vhd" \
+"../../../../Top_Design_Ultrasonic_Sensor_Project.srcs/sources_1/new/PWM_3.vhd" \
+"../../../../Top_Design_Ultrasonic_Sensor_Project.srcs/sources_1/new/PWM_4.vhd" \
+"../../../../Top_Design_Ultrasonic_Sensor_Project.srcs/sources_1/new/PWM_5.vhd" \
+"../../../../Top_Design_Ultrasonic_Sensor_Project.srcs/sources_1/new/PWM_6.vhd" \
+"../../../../Top_Design_Ultrasonic_Sensor_Project.srcs/sources_1/new/PWM_7.vhd" \
+"../../../../Top_Design_Ultrasonic_Sensor_Project.srcs/sources_1/new/PWM_8.vhd" \
+"../../../../Top_Design_Ultrasonic_Sensor_Project.srcs/sources_1/new/PWM_9.vhd" \
+"../../../../Top_Design_Ultrasonic_Sensor_Project.srcs/sources_1/new/PWM_KY012.vhd" \
+"../../../../Top_Design_Ultrasonic_Sensor_Project.srcs/sources_1/new/ultraSonic.vhd" \
+"../../../../Top_Design_Ultrasonic_Sensor_Project.srcs/sources_1/new/Top_design.vhd" \
+
+# Do not sort compile order
+nosort

@@ -1,0 +1,4 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Taavi/OneDrive/Dokumendid/Github/Digital-electronics-1/Labs/Project/Top_Design_Ultrasonic_Sensor_Project/Top_Design_Ultrasonic_Sensor_Project.srcs/sources_1/new/Top_design.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'top_design'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Taavi/OneDrive/Dokumendid/Github/Digital-electronics-1/Labs/Project/Top_Design_Ultrasonic_Sensor_Project/Top_Design_Ultrasonic_Sensor_Project.srcs/sim_1/new/tb_top_design.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'tb_top_design'

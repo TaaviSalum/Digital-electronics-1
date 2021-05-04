@@ -1,0 +1,49 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Tue May  4 11:55:15 2021
+# Process ID: 8972
+# Current directory: C:/Users/Lydia/OneDrive/Escritorio/Top_Design_Ultrasonic_Sensor_Project
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent13664 C:\Users\Lydia\OneDrive\Escritorio\Top_Design_Ultrasonic_Sensor_Project\Top_Design_Ultrasonic_Sensor_Project.xpr
+# Log file: C:/Users/Lydia/OneDrive/Escritorio/Top_Design_Ultrasonic_Sensor_Project/vivado.log
+# Journal file: C:/Users/Lydia/OneDrive/Escritorio/Top_Design_Ultrasonic_Sensor_Project\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Lydia/OneDrive/Escritorio/Top_Design_Ultrasonic_Sensor_Project/Top_Design_Ultrasonic_Sensor_Project.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+source top_design.tcl
+update_compile_order -fileset sim_1
+close_sim
+launch_simulation
+launch_simulation
+launch_simulationlaunch_simulation
+open_wave_config C:/Users/Lydia/OneDrive/Escritorio/ultraSonic/ultraSonic/tb_ultraSonic_behav1.wcfg
+source tb_ultraSonic.tcl
+tb_top_design/uut_top_design/Sensor/clk}} {{/tb_top_design/uut_top_design/Sensor/reset}} {{/tb_top_design/uut_top_design/Sensor/act}} {{/tb_top_design/uut_top_design/Sensor/echo}} {{/tb_top_design/uut_top_design/Sensor/trigger}} {{/tb_top_design/uut_top_design/Sensor/distanceRange}} {{/tb_top_design/uut_top_design/Sensor/tic_1u}} {{/tb_top_design/uut_top_design/Sensor/cnt_1u}} {{/tb_top_design/uut_top_design/Sensor/tic_1m}} {{/tb_top_design/uut_top_design/Sensor/cnt_1m}} {{/tb_top_design/uut_top_design/Sensor/tic_60m}} {{/tb_top_design/uut_top_design/Sensor/cnt_60m}} {{/tb_top_design/uut_top_design/Sensor/echo_value}} {{/tb_top_design/uut_top_design/Sensor/cnt_trig}} {{/tb_top_design/uut_top_design/Sensor/cnt_echo}} {{/tb_top_design/uut_top_design/Sensor/DIV_1u}} {{/tb_top_design/uut_top_design/Sensor/DIV_1m}} {{/tb_top_design/uut_top_design/Sensor/DIV_60m}} 
+current_wave_config {Untitled 2}
+add_wave {{/tb_top_design/uut_top_design/LED_decoder}} 
+current_wave_config {Untitled 2}
+add_wave {{/tb_top_design/uut_top_design/PWM_KY012}} 
+relaunch_sim
+add_bp {C:/Users/Lydia/OneDrive/Escritorio/Top_Design_Ultrasonic_Sensor_Project/Top_Design_Ultrasonic_Sensor_Project.srcs/sim_1/new/tb_top_design.vhd} 56
+remove_bps -file {C:/Users/Lydia/OneDrive/Escritorio/Top_Design_Ultrasonic_Sensor_Project/Top_Design_Ultrasonic_Sensor_Project.srcs/sim_1/new/tb_top_design.vhd} -line 56
+save_wave_config {C:/Users/Lydia/OneDrive/Escritorio/Top_Design_Ultrasonic_Sensor_Project/tb_top_design_behav.wcfg}
+add_files -fileset sim_1 -norecurse C:/Users/Lydia/OneDrive/Escritorio/Top_Design_Ultrasonic_Sensor_Project/tb_top_design_behav.wcfg
+set_property xsim.view C:/Users/Lydia/OneDrive/Escritorio/Top_Design_Ultrasonic_Sensor_Project/tb_top_design_behav.wcfg [get_filesets sim_1]
+close_sim
+launch_simulation
+open_wave_config C:/Users/Lydia/OneDrive/Escritorio/Top_Design_Ultrasonic_Sensor_Project/tb_top_design_behav.wcfg
+source tb_top_design.tcl
+set_property -name {xsim.simulate.runtime} -value {1000us} -objects [get_filesets sim_1]
+close_sim
+launch_simulation
+open_wave_config C:/Users/Lydia/OneDrive/Escritorio/Top_Design_Ultrasonic_Sensor_Project/tb_top_design_behav.wcfg
+source tb_top_design.tcl
+relaunch_sim
+close_sim
+launch_simulation
+open_wave_config C:/Users/Lydia/OneDrive/Escritorio/Top_Design_Ultrasonic_Sensor_Project/tb_top_design_behav.wcfg
+source tb_top_design.tcl
+close_sim

@@ -1,0 +1,33 @@
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto bdb6469d961f46fd8a45a308679b7c2c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_top_design_behav xil_defaultlib.tb_top_design -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling architecture behavioral of entity xil_defaultlib.ultraSonic [ultrasonic_default]
+Compiling architecture behavioral of entity xil_defaultlib.LED_decoder [led_decoder_default]
+Compiling architecture behavioral of entity xil_defaultlib.clock_enable [\clock_enable(g_max=400000)\]
+Compiling architecture behavioral of entity xil_defaultlib.cnt_up_down [cnt_up_down_default]
+Compiling architecture behavioral of entity xil_defaultlib.PWM_1 [pwm_1_default]
+Compiling architecture behavioral of entity xil_defaultlib.PWM_2 [pwm_2_default]
+Compiling architecture behavioral of entity xil_defaultlib.PWM_3 [pwm_3_default]
+Compiling architecture behavioral of entity xil_defaultlib.PWM_4 [pwm_4_default]
+Compiling architecture behavioral of entity xil_defaultlib.PWM_5 [pwm_5_default]
+Compiling architecture behavioral of entity xil_defaultlib.PWM_6 [pwm_6_default]
+Compiling architecture behavioral of entity xil_defaultlib.PWM_7 [pwm_7_default]
+Compiling architecture behavioral of entity xil_defaultlib.PWM_8 [pwm_8_default]
+Compiling architecture behavioral of entity xil_defaultlib.PWM_9 [pwm_9_default]
+Compiling architecture behavioral of entity xil_defaultlib.PWM_10 [pwm_10_default]
+Compiling architecture behavioral of entity xil_defaultlib.PWM_KY012 [pwm_ky012_default]
+Compiling architecture behavioral of entity xil_defaultlib.top_design [\top_design(div_1u=1,div_1m=100)...]
+Compiling architecture behavioral of entity xil_defaultlib.tb_top_design
+Built simulation snapshot tb_top_design_behav
