@@ -158,6 +158,9 @@ When the Ultrasonic sensor reads a signal in its reading range with Ultrasonic s
 
 ------------------------------------------------------------------------
 ## **Discussion of results**
+All the individual VHDL sub-projects came out nicely and worked well. But there is an issue in the projects Top testbench, everything matches and seems to work, every signal comes through but the Ultrasonic sensor ‘echo’ and ‘trigger’ signals are just not coming through and that causes the whole design to collapse.  
+
+Overall the project was executed pretty well.
 
 
 
